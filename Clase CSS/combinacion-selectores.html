@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            /*.padre p:nth-child(2), p:nth-child(3) {
+                color: tomato;
+            }*/
+
+            p + p {
+                color: tomato;
+            }
+
+            /*.hermano span {
+                color: rebeccapurple;
+            }*/
+
+            div ~ div span {
+                color: rebeccapurple;
+            }
+
+            /*.padre div span {
+                font-weight: bold;
+            }*/
+
+            div > div span {
+                font-weight: bold;
+            }
+
+            div ~ div {
+                color: teal;
+                /* DERECHOS DE AUTOR - TODOS LOS DERECHOS RESERVADOS */
+                /*
+                    CITAR AUTOR DEL CÓDIGO:
+                    Carreño David D. (2023) Código de ejercicio CSS - Selectores.
+                    CampusLands
+                */
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="abuelo">
+            <div class="padre">
+                <p>Hugo</p>
+                <p>Paco</p>
+                <p>Luis</p>
+
+                <div>
+                    <span>Bisnieto</span>
+                </div>
+
+                <p>Primo</p>
+                <div>Sobrino</div>
+            </div>
+
+            <div class="hermano">
+                <span>Nieto</span>
+            </div>
+        </div>
+        
+    </body>
+
+</html>
