@@ -1,0 +1,36 @@
+#titulo, #adicional p > a {
+    color: teal;
+}
+
+p > strong, p > a, th {
+    color: red;
+}
+
+.destacado, table .especial, td strong {
+    color: gold;
+}
+
+#subtitulo, p a em, caption {
+    color: blue;
+}
+
+.especial, #especial {
+    color: blueviolet;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr, td, th {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+td {
+    color: green;
+}
+
+#adicional {
+    color: darkolivegreen;
+}
