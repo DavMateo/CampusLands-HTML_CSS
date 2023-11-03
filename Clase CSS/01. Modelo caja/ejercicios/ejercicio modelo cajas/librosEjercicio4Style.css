@@ -1,0 +1,36 @@
+h1{
+  border: 2px solid blue;  
+}
+
+h2{
+    border: 2px solid gray;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+li{
+    margin: 15px;
+}
+
+.caja1{
+    border: 2px solid lightgreen;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.caja2{
+    border: 2px solid lightgreen;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.D{
+    padding: 5px;
+}
+
+.C{
+margin-top: 30px;
+margin-bottom: 30px;
+}
