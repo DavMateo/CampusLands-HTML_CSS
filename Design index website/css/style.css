@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #50AAFF;
+}
+
+#encabezado {
+    display: flex;
+    background-color: rgba(255, 255, 255, .55);
+    border-radius: 15px 15px 0 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+.contentMenu {
+    display: none;
+}
+
+.menu, .principal, .perfil, .tareas, .clases {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #000;
+    border-radius: 50px;
+    padding: 8px;
+    background-color: transparent;
+}
+
+.menu svg, .principal svg, .perfil svg, .tareas svg, .clases svg {
+    background-color: transparent;
+}
+
+.perfil {
+    position: relative;
+    top: -43px;
+}
