@@ -1,0 +1,12 @@
+:root {
+    --flexbox: flex;
+    --tipografiaGlobal:'Nunito Sans', 'Rubik', Arial, Helvetica, sans-serif, serif;
+    --tipografiaTitulo: 'Roboto', 'Rubik', 'Nunito Sans', Arial, Helvetica, sans-serif, serif;
+    --tipografiaSubtitulo: 'Rubik', 'Nunito Sans', Arial, Helvetica, sans-serif, serif;
+    --colorTexto: #d9d9d9;
+    --colorFondoPrincipal: #75AAFF;
+    --colorFondoTareas: #79BF6B;
+    --colorFondoClase: #E6A250;
+    --colorFondoPracticas: #9987FF;
+    --colorFondoFeedback: #FF8383;
+}

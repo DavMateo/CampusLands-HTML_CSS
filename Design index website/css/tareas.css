@@ -1,0 +1,22 @@
+@import url("./style.css");
+@import url("./tipografias.css");
+@import url("./variables.css");
+
+body {
+    background-color: var(--colorFondoTareas);
+}
+
+#encabezado {
+    background-color: var(--colorFondoTareas);
+}
+
+#main {
+    display: var(--flexbox);
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.tarea {
+    display: var(--flexbox);
+    
+}
