@@ -1,0 +1,100 @@
+@import url("./style.css");
+@import url("./variables.css");
+@import url("./tipografias.css");
+
+body {
+    background-color: var(--colorFondoTareas);
+}
+
+#encabezado {
+    background-color: var(--colorFondoTareas);
+}
+
+#principal {
+    display: var(--flexbox);
+    flex-wrap: wrap;
+    margin-top: 4.375rem;
+    padding: .8rem;
+}
+
+.tareaHtml {
+    display: var(--flexbox);
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, .55);
+    border-radius: .625rem;
+    height: fit-content;
+    position: relative;
+    width: 100%;
+}
+
+.tareaHtml_imagen {
+    width: 100%;
+    height: 20vh;
+    object-fit: cover; 
+    border-radius: 0.625rem 0.625rem 0 0;
+    transition: all .3s;
+}
+
+.contenido {
+    display: var(--flexbox);
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    padding: 0px .625rem;
+}
+
+.contenido_titulo {
+    display: var(--flexbox);
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.contenido_texto {
+    margin: .625rem 0;
+}
+
+.contenido_info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: .625rem;
+    grid-row-gap: .3rem;
+    font-size: 65%;
+    justify-items: self-start;
+    align-items: center;
+    margin: .625rem 0;
+}
+
+/* INTERACTIVIDAD Y CLASES "DINÁMICAS" MEDIANTE JS */
+.tareaHtml_imagen--desplegar {
+    border-radius: .625rem;
+    transition: all .3s;
+}
+
+.contenido--disabled {
+    display: none;
+}
+
+#iconoDesplegar {
+    font-size: 1.2rem;
+}
+
+.iconoActivo {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    transition: all .3s;
+}
+
+.iconoActivo--clicked {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    transform: rotate(180deg);
+    transition: all .3s;
+}
