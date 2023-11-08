@@ -16,14 +16,25 @@ body {
     margin: 1.2rem;
 }
 
-table {
-    width: 100%;
+#encabezado {
+    height: 9vh;
+    padding: 10px;
+}
+
+.logotipo {
+    float: left;
+}
+
+.buscarGoogle {
+    float: right;
+    margin: 18px 0px;
 }
 
 #menu {
     background-color: #264ab5;
     border: 2px solid #081a83;
     padding: 8px 4px;
+    margin-left: 18px;
     margin-right: 1em;
 }
 
@@ -36,9 +47,12 @@ table {
     font-size: 1.3em;
 }
 
+.asideIzquierdo {
+    float: left;
+    width: 20%;
+}
+
 #lateral {
-    display: inline-block;
-    /* width: 90%; */
     font-size: .9em;
     background-color: #f7f7f7;
     border: 1px solid #aeaeb6;
@@ -60,7 +74,6 @@ table {
 }
 
 #publicidad {
-    /* width: 90%; */
     color: #555;
     background-color: #fff7ce;
     margin-top: 24px;
@@ -72,32 +85,33 @@ table {
     color: #CC6600;
 }
 
-
 .seccionPrincipal {
-    padding: 16px;
-    height: 100vh;
+    display: inline-block;
+    padding: 0px 15px;
+    width: 60%;
 }
 
 .seccionPrincipal_imagen {
-    width: 30%;
+    width: 25%;
     margin-top: 15px;
-    margin-right: 15px;
 }
 
 .seccionPrincipal_texto {
-    margin-top: 15px;
+    float: right;
+    width: 73%;
 }
 
 .articulo {
-    margin-bottom: 90px;
+    margin-bottom: 6%;
 }
 
 .articulo h2 {
     color: #CC6600;
     font-size: 1.6em;
     line-height: 1.2em;
-    margin-top: 160px;
     margin-bottom: .3em;
+    overflow: hidden;
+    clear: both;
 }
 
 .articulo a {
@@ -105,16 +119,43 @@ table {
 }
 
 .articulo p {
-    margin-top: 1.1em;
+    margin: .3em 0;
 }
 
 #secundario {
     border: 2px solid #b99674;
     padding: 10px;
     line-height: 1.8em;
+    width: 20%;
+    float: right;
 }
 
 .secundario_articulo-titulo {
     background-color: #db9157;
     padding: 8px;
+}
+
+#pieDePagina {
+    display: block;
+    clear: both;
+    padding: 15px;
+}
+
+.separador {
+    padding: 7px 5px;
+    border: 1px solid #7e8592;
+    background-color: #f7f7f7;
+}
+
+.separador a {
+    padding: 0 5px 0 2px;
+    border-right: 1px solid #7e8592;
+}
+
+.separador a:nth-child(6) {
+    border: none;
+}
+
+.copy_footer {
+    float: right;
 }
