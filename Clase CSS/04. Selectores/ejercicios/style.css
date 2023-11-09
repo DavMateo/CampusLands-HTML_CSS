@@ -1,0 +1,15 @@
+img {
+    border: 4px solid red;
+}
+
+a[href] {
+    color: green;
+}
+
+a[href ^= "https"] {
+    color: pink;
+}
+
+a.externo.interno {
+    color: purple;
+}

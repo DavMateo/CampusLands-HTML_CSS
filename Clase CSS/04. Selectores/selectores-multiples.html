@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            /*.classic {
+                border: none;
+                border-radius: 10px;
+                background: linear-gradient(180deg, darkblue, aqua);
+                color: #fff;
+                padding: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                box-shadow: 1px 1px 4px #000;
+                cursor: pointer;
+                transition: all .3s;
+            }
+
+            .classic:hover {
+                transform: scale(110%);
+            }
+
+            .classic:active {
+                transform: scale(100%);
+            }*/
+
+            .classic {
+                border: 2px solid tomato;
+            }
+
+            .primary {
+                font-size: 5rem;
+            }
+
+            .large {
+                width: 50%;
+            }
+
+            button.classic.primary.large {
+                color: limegreen;
+            }
+
+            button.classic.primary.large:active {
+                border: 2px solid blue;
+            }
+
+            button[disabled] {
+                width: 25%;
+            }
+
+            [disabled] {
+                border: 2px solid black;
+                margin-left: 50px;
+            }
+
+            a[rel="nofollow"] {
+                background-color: red;
+            }
+
+            [data-mood ~= "happy"] {
+                background-color: green;
+                color: white;
+                padding: 5px;
+            }
+
+            [lang |= "es"] {
+                background-color: red;
+                color: white;
+                padding: 5px;
+            }
+
+            [lang |= "es"]:hover {
+                background-color: blueviolet;
+            }
+
+            a[href]::after {
+                content: "URL: [" attr(href)" ]";
+                display: inline-block;
+                color: #666;
+            }
+
+            a[href^="http://"]::after {
+                content: " (Página no segura): " attr(href);
+            }
+
+            a[href^="https://"]:link {
+                color: brown;
+                border: 4px solid green;
+            }
+
+            a[href^="https://"]:visited {
+                background-color: aqua;
+            }
+
+            a[href$=".pdf"]::before {
+                content: url("./image\(55\).png");
+            }
+
+            a[href*="campus"] {
+                border: 1px solid lightskyblue;
+            }
+
+            input[name="nombre"]:focus {
+                border: 4px solid blue;
+            }
+
+            form:focus-within {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+
+    <body>
+        <button class="classic primary large">Botón</button>
+        <br/><br/>
+
+        <button class="classic large" disabled>Botón 2</button>
+        <br/><br/>
+
+        <input type="radio" name="miradio" id="miradio" disabled />
+        <br/><br/>
+
+        <a href="http://www.campuslands.com" rel="nofollow">Campus Lands</a>
+        <br/><br/>
+        <a href="http://www.google.com" rel="sifollow" data-mood="happy">Google.com</a>
+        <br/><br/>
+
+        <div data-mood="happy sad">Uno</div>
+        <br/><br/>
+
+        <div lang="es-MX en-EN">English</div>
+        <br/><br/>
+
+        <a href="https://campuslands.com" target="_blank">Campus Lands</a>
+        <a href="http://campuslands.com">Campus Lands</a>
+        <br/><br/>
+
+        <a href="http://campuslands.pdf" download>Documento PDF de Campus Lands</a>
+        <br/><br/>
+
+        <form>
+            <label for="nombre">Nombre: </label> <br/>
+            <input type="text" name="nombre" id="nombre" /> <br/>
+
+            <label for="lastname">Apellido: </label> <br/>
+            <input type="text" name="lastname" id="lastname" /> <br/>
+        </form>
+    </body>
+
+</html>
