@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #000;
+    width: 100vw;
+    height: 620px;
+    overflow: hidden;
+}
+
+.seccion1 {
+    width: 100vw;
+    height: 25%;
+    background-color: #002984;
+    position: absolute;
+    top: 0;
+}
+
+.seccion2 {
+    width: 50vw;
+    height: 35%;
+    background-color: #42a5f4;
+    position: absolute;
+    top: 6rem;
+}
+
+.seccion3 {
+    width: 50vw;
+    height: 35%;
+    background-color: #b0bec5;
+    position: absolute;
+    top: 6rem;
+    right: 0;
+}
+
+.seccion4 {
+    width: 75vw;
+    height: 55%;
+    background-color: #34474f;
+    position: absolute;
+    bottom: 0;
+}
+
+.seccion5 {
+    width: 25vw;
+    height: 27.5%;
+    background-color: #e47a37;
+    position: absolute;
+    bottom: 27.5%;
+    right: 0;
+}
+
+.seccion6 {
+    width: 25vw;
+    height: 27.5%;
+    background-color: #e51923;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
