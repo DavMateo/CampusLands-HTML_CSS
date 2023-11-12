@@ -1,12 +1,37 @@
 let data = {
     "09/11/2023": {
         "tareas": {
-            "url": "",
-            "hora": "18:00",
-            "tipo": "HTML/CSS"
+            "cantidadArchivos": 0,
+            "peso": 0,
+            "tipo": "",
+            "fecha": {
+                "creacion": "",
+                "modificacion": ""
+            }, //Se agrega al momento de que el usuario agregue la info. Se cargará la fecha con hora mediante JS
+            "imagenPreview": "",
+            "url": ""
         },
         "clase": {
-
+            "cantidadArchivos": 0,
+            "peso": 0,
+            "tipo": "",
+            "fecha": {
+                "creacion": "",
+                "modificacion": ""
+            },
+            "imagenPreview": "",
+            "url": ""
+        },
+        "refuerzo": {
+            "cantidadArchivos": 0,
+            "peso": 0,
+            "tipo": "",
+            "fecha": {
+                "creacion": "",
+                "modificacion": ""
+            },
+            "imagenPreview": "",
+            "url": ""
         }
     }
 }

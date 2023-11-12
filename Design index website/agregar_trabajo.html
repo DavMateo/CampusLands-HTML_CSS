@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/agregarTrabajo.css" />
+        <script src="./js/agregarTarea.js" defer></script>
+    </head>
+
+    <body>
+        <header id="encabezado">
+            <div class="menu">
+                <div class="menu_line"></div>
+                <div class="menu_line"></div>
+                <div class="menu_line"></div>
+            </div>
+
+            <h1 class="encabezado_titulo">Trabajos HTML & CSS</h1>
+            
+            <img class="encabezado_imagen" src="./img/profile.jpg" alt="profile" title="Usuario Anónimo" />
+        </header>
+
+        <div class="sidebar">
+            <!-- Este div sin clase permitirá ubicar correctamente los elementos dentro del menú lateral -->
+            <div>
+                <div class="sidebar_header">
+                    <div class="header_contenedorClose">
+                        <i class="ri-close-line header_close"></i>
+                    </div>
+                    <img class="header_imagen" src="./img/profile.jpg" alt="profile" title="Usuario Anónimo" />
+                    <span class="header_texto">¡Bienvenido Usuario!</span>
+                </div>
+    
+                <div class="sidebar_main">
+                    <nav>
+                        <ul class="main_list">
+                            <li class="list_item">
+                                <i class="ri-home-line list_icon"></i>
+                                <a class="list_link" href="#">Principal</a>
+                            </li>
+    
+                            <li class="list_item">
+                                <i class="ri-file-code-line list_icon"></i>
+                                <a class="list_link" href="#">Tareas</a>
+                            </li>
+    
+                            <li class="list_item">
+                                <i class="ri-macbook-line list_icon"></i>
+                                <a class="list_link" href="#">Temas de clase</a>
+                            </li>
+    
+                            <li class="list_item">
+                                <i class="ri-pages-line list_icon"></i>
+                                <a class="list_link" href="#">Prácticas</a>
+                            </li>
+    
+                            <li class="list_item">
+                                <i class="ri-feedback-line list_icon"></i>
+                                <a class="list_link" href="#">Feedback</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="sidebar_footer">
+                <a href="#" class="footer_link">
+                    <i class="ri-login-box-line"></i>
+                    <span>Iniciar Sesión</span>
+                </a>
+
+                <a href="#" class="footer_link">Versión 1.0.0</a>
+            </div>
+        </div>
+
+        <main id="principal">
+            <form action="">
+                <fieldset>
+                    <legend>Información página web</legend>
+    
+                    <div>
+                        <label for="cantFile" title="No contar los archivos multimedia.">¿Cuántos archivos tiene la página web?</label>
+                        <input type="range" name="cantFile" id="cantFile" min="1" max="100" required />
+                    </div>
+    
+                    <div>
+                        <label for="size" title="Poner el peso total de todos los archivos de la página web">Peso total:</label>
+                        <input type="number" name="size" id="size" required />
+                        
+                        <select name="tipoDatoAlmacenamiento" id="sizeType" required>
+                            <option value="" disabled="disabled" selected="true">Elegir...</option>
+                            <option value="kb">Kilobyte</option>
+                            <option value="mb">Megabyte</option>
+                            <option value="gb">Gigabyte</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <select name="tipoArchivo" id="typeFile" title="Puedes escoger más de una opción." multiple required>
+                            <option value="" disabled="disabled">Elige alguna opción</option>
+
+                            <optgroup label="FrontEnd">
+                                <option value="html">HTML</option>
+                                <option value="css">CSS</option>
+                                <option value="js">JavaScript</option>
+                            </optgroup>
+
+                            <optgroup label="BackEnd">
+                                <option value="py">Python</option>
+                                <option value="java">Java</option>
+                                <option value="rb">Ruby</option>
+                                <option value="nodejs">NodeJS</option>
+                                <option value="php">PHP</option>
+                                <option value="go">Goland</option>
+                            </optgroup>
+
+                            <optgroup label="Base de Datos">
+                                <option value="sql">MySql</option>
+                                <option value="mogobd">Mongo BD</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="imgPreview" title="La imagen elegida será la que aparezca como presentación de tu tarea">Elija una imagen</label>
+                        <input type="file" name="imgPreview" id="imgPreview" accept=".png, .jpg, .jpeg, .raw" required />
+                    </div>
+
+                    <div>
+                        <label for="url">URL de la página web:</label>
+                        <input type="text" name="url" id="url" minlength="1" maxlength="200" required />
+                    </div>
+    
+                    <div>
+                        <br/>
+                        <input type="submit" value="Enviar" required />
+                        <input type="reset" value="Reiniciar" required />
+                    </div>
+    
+                </fieldset>
+            </form>
+        </main>
+
+        <footer id="pieDePagina"></footer>
+    </body>
+
+</html>

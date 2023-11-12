@@ -13,6 +13,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     overflow-x: hidden; /* Eliminar en caso de problemas con el scroll */
+    color: var(--colorTextoPrincipal);
 }
 
 #encabezado {
@@ -43,7 +44,7 @@ body {
 .menu > .menu_line {
     width: 100%;
     height: .2rem;
-    background-color: var(--colorTexto);
+    background-color: var(--colorTextoPrincipal);
     border-radius: .625rem;
     transform-origin: left;
     transition: all .3s;
@@ -66,7 +67,7 @@ body {
     font-family: var(--tipografiaTitulo);
     font-weight: 600;
     letter-spacing: .063rem;
-    color: var(--colorTexto);
+    color: var(--colorTextoPrincipal);
 }
 
 .encabezado_imagen {
@@ -80,9 +81,11 @@ body {
     /* display: var(--flexbox); */
     display: none;
     position: fixed;
+    top: 0;
+    left: 0;
     min-width: 65vw;
     height: 100vh;
-    background-color: #023047;
+    background-color: var(--colorFondoElementos);
     padding: .9rem;
     margin-right: .625rem;
     flex-direction: column;
@@ -109,7 +112,7 @@ body {
 
 .header_contenedorClose {
     display: var(--flexbox);
-    color: var(--colorTexto);
+    color: var(--colorTextoSecundario);
     width: 100%;
     justify-content: flex-end;
     font-size: 1.2rem;
@@ -120,7 +123,7 @@ body {
 }
 
 .header_close:hover {
-    text-shadow: 0px 0px 5px var(--colorTexto);
+    text-shadow: 0px 0px 5px var(--colorTextoSecundario);
 }
 
 .header_imagen {
@@ -131,7 +134,7 @@ body {
 }
 
 .header_texto {
-    color: var(--colorTexto);
+    color: var(--colorTextoSecundario);
     font-family: var(--tipografiaSubtitulo);
     font-variant: small-caps;
     text-transform: capitalize;
@@ -166,56 +169,36 @@ body {
     margin: 0;
 }
 
-.list_item:nth-child(1):hover {
-    background-color: #75AAFF;
-    box-shadow: 0px 0px 8px #75AAFF;
-}
-
-.list_item:nth-child(2):hover {
-    background-color: #79BF6B;
-    box-shadow: 0px 0px 8px #79BF6B;
-}
-
-.list_item:nth-child(3):hover {
-    background-color: #E6A250;
-    box-shadow: 0px 0px 8px #E6A250;
-}
-
-.list_item:nth-child(4):hover {
-    background-color: #9987FF;
-    box-shadow: 0px 0px 8px #9987FF;
-}
-
-.list_item:nth-child(5):hover {
-    background-color: #FF8383;
-    box-shadow: 0px 0px 8px #FF8383;
+.list_item:hover {
+    background-color: var(--colorEnfasisPrimario);
+    box-shadow: 0px 0px 8px var(--colorEnfasisPrimario);
 }
 
 .list_icon {
-    color: var(--colorTexto);
+    color: var(--colorTextoBotonesIconos);
     margin-right: .85rem;
 }
 
 .list_link {
     text-decoration: none;
-    color: var(--colorTexto);
+    color: var(--colorTextoBotonesIconos);
     width: 100%;
     transition: all .3s;
 }
 
 .list_item:hover > .list_icon {
-    color: #000;
-    font-size: 1.2rem;
+    color: var(--colorTextoSecundario);
+    font-size: 1.15rem;
 }
 
 .list_item:hover > .list_link {
-    color: #000;
-    font-size: 1.2rem;
+    color: var(--colorTextoSecundario);
+    font-size: 1.15rem;
 }
 
 .sidebar_footer {
     display: var(--flexbox);
-    color: var(--colorTexto);
+    color: var(--colorTextoSecundario);
     font-size: .75rem;
     width: 100%;
     flex-wrap: wrap;
@@ -225,7 +208,7 @@ body {
 
 .footer_link {
     text-decoration: none;
-    color: var(--colorTexto);
+    color: var(--colorTextoSecundario);
     padding: .5rem;
     border-radius: .313rem;
     transition: all .3s;
@@ -233,8 +216,8 @@ body {
 
 .footer_link:hover {
     background-color: rgba(255, 255, 255, .55);
-    color: #17202a;
-    box-shadow: 0px 0px 5px var(--colorTexto);
+    color: var(--colorTextoBotonesIconos);
+    box-shadow: 0px 0px 5px var(--colorTextoSecundario);
     backdrop-filter: blur(5px);
 }
 
