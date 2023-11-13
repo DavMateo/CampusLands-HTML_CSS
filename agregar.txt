@@ -1,0 +1,11 @@
+Páginas a agregar:
+
+1. Progreso de nuevas características a agregar.
+    1.1. Solicitudes por parte de los usuarios.
+
+2. Configuración.
+
+3. Perfil del piloto.
+
+4. Donaciones.
+    4.1. Tabla de posiciones en donaciones (Agradecimientos).

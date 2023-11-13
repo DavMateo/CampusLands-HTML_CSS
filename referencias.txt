@@ -1,0 +1,3 @@
+sbHeader = Sidebar Header
+notif = Notificación
+num = Número
