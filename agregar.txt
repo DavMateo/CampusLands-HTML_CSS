@@ -1,11 +1,110 @@
 Páginas a agregar:
 
-1. Progreso de nuevas características a agregar.
-    1.1. Solicitudes por parte de los usuarios.
+1. Dashboard (Recopilación y Visualización simplificada de todos los datos almacenados en la app web)
 
-2. Configuración.
+2. Perfil del piloto
+    2.1. Habilidades del piloto
+    2.2. Información general del piloto
+    2.3. Empleo del Piloto
+    2.4. Registro de combate del piloto (Estadísticas de isk perdido e isk destruido / ganado)
+    2.5. Medallas
+    2.6. Jugadores enemigos
 
-3. Perfil del piloto.
+3. Progreso de nuevas características a agregar
+    3.1. Solicitudes por parte de los usuarios
+    3.2. Reportes de bugs en características recientemente añadidas
+    3.3. Votación para la implementación de nuevas características (conceptos)
 
-4. Donaciones.
-    4.1. Tabla de posiciones en donaciones (Agradecimientos).
+4. Configuración
+    4.1. Información del Perfil
+    4.2. Administrar Perfiles
+        4.2.1. Cambiar entre Eve Online y Eve Echoes (Si así lo amerita)
+    4.3. Seguridad
+        4.3.1. Cambiar contraseña
+        4.3.2. Activar autenticación en dos pasos
+        4.3.3. BackUp de los datos del piloto
+    4.4. Notificaciones (Esto refiere a notificaciones esenciales e importantes)
+    4.5. Idioma
+    4.6. Versión
+    4.7. Preguntas y Respuestas
+    4.8. Términos y Condiciones
+
+5. Repartir Loot (Determinar que parte del loot le corresponde a cada piloto en un grupo de pilotos de cápsula)
+
+6. Administración de proyectos (Si no existe ninguno, se tendrá que agregar uno nuevo)
+    6.1. Agregar nuevo proyecto
+    6.2. Configurar proyecto existente
+    6.3. Invitar a otros pilotos al proyecto (Código de invitación por parte del administrador)
+    6.4. Mini-dashboard del proceso en el proyecto (isk invertido, tiempo, habilidades, pH, participantes, isk ahorrado, etc)
+    6.5. Herramientas de ahorro de isk teniendo en cuenta habilidades de los pilotos colaboradores y versatilidad del mercado.
+        6.5.1. Asignación de tareas a cada piloto
+    6.6. Lista de tareas y calendario respecto a todos los deberes que tendrá cada piloto.
+    6.7. Chat de conversación entre pilotos de capsula que colaboran en el proyecto.
+
+7. Visualización general del Árbol de naves
+    7.1. Vista general (Breve descripción por nave)
+        7.1.1. Vista descriptiva completa de cada nave (Si el piloto desea ver más al respecto)
+    7.2. Vista de naves adquiridas, por adquirir (lista de deseos) y no adquiridas (naves restantes) (Breve descripción por nave)
+        7.2.1. Vista descriptiva completa de cada nave (Si el piloto desea ver más al respecto)
+
+8. Administración de implantes
+
+9. Producción de naves
+    9.1. Calculadora de recursos y tiempo para la producción de una nave en específico
+
+10. Producción planetaria
+    10.1. Encontrar los mejores sistemas con recursos planetarios específicos
+    10.2. Producción / ganancia estimada y tiempo necesario según habilidades del piloto
+
+11. Donaciones
+    11.1. Tabla de posiciones en donaciones (Agradecimientos)
+    11.2. Opciones de donación
+        11.2.1. Buy me a Coffee (Dinero real)
+        11.2.2. Donar isk dentro del juego
+
+12. Simulador Fit Nave
+    12.1. Simular fit de una nave
+    12.2. Guardar fit de una nave
+
+13. Calculadora de entrenamiento de habilidades (Mostrar tiempo de demora, pH necesario, isk necesario y nuevas habilidades adquiridas)
+    13.1. Calcular en base a rutas establecidas (Piloto de logística, batalla, minero, etc)
+        13.1.1. Opción de configurar las rutas ya establecidas o crear rutas propias.
+    13.2. Calcular en base a una habilidad o conjunto de habilidades elegidas por el usuario.
+
+14. Administración y control de Cartera (Historial de ingresos y egresos)
+    14.1. Control general
+    14.2. Control de isk
+    14.3. Control de Plex
+    14.4. Control de AUR
+
+15. Noticias
+    15.1. Últimas actualizaciones
+    15.2. Eventos
+
+16. Minería
+    16.1. Calculadora de Minería
+    16.2. Reprocesamiento de menas
+    16.3. Mejores sistemas solares con recursos planetarios filtrados por nivel de seguridad o en general
+    16.4. Producción / ganancia estimada y tiempo necesario según habilidades del piloto
+    16.5. Recordatorio de minería (Descargar carga de menas o iniciar a minar)
+
+17. Administración de la citadel
+    17.1. Manejo de defensa de la citadel
+    17.2. Manejo de recursos para el funcionamiento de la citadel
+
+18. Administración del Mercado
+    18.1. Precios generales estimados (Actualizado cada parche)
+    18.2. Manejo de órdenes de venta
+    18.3. Manejo de órdenes de compra
+    18.4. Manejo de órdenes de venta y compra
+    18.5. Adquisición y venta de Plex
+
+19. Administración de la corporación y Alianza
+    19.1. Administrar corporación
+    19.2. Administrar alianza
+    19.3. Administrar coalición
+
+20. Mapa Eve
+    20.1. Mapa general
+    20.2. Mapa de Corporaciones
+    20.3. Mapa de Alianzas y Coaliciones

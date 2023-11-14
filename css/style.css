@@ -209,12 +209,14 @@ input[type="checkbox"]:checked ~ .sbHeader_check::after {
 
 .sbNavbar {
     display: var(--flexbox);
+    flex-direction: column;
     width: 17rem;
     height: 100vh;
     position: inherit;
     top: 0;
     background-color: lightblue; /* ELIMINAR LUEGO */
     padding: 1rem;
+    gap: 2rem;
 }
 
 .sbNavbar_header {
@@ -245,6 +247,15 @@ input[type="checkbox"]:checked ~ .sbHeader_check::after {
     font-variant: normal;
     text-transform: none;
     letter-spacing: .175rem;
+}
+
+.sbNavbar_main {
+    display: var(--flexbox);
+    flex-direction: column;
+}
+
+.sbNavbar_list {
+    list-style: none;
 }
 
 /* FIN SIDEBAR ✔ */
