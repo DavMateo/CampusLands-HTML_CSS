@@ -1,3 +1,5 @@
 sbHeader = Sidebar Header
 notif = Notificación
 num = Número
+sbNavbar = Sidebar Navigator Bar
+sbFooter = Sidebar Footer

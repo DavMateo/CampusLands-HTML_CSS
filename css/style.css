@@ -1,0 +1,250 @@
+@import url("./variables.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--textoBase);
+}
+
+html {
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--bg-lightMode);
+    overflow-x: hidden;
+}
+
+/* INICIO SIDEBAR */
+
+.sidebar {
+    position: fixed;
+    width: 100vw;
+}
+
+.sbHeader {
+    display: var(--flexbox);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightcoral; /* ELIMINAR LUEGO */
+    padding: 1.1rem 1.5rem;
+}
+
+.sbHeader_grupo1, .sbHeader_grupo2, .sbHeader_grupo3 {
+    display: var(--flexbox);
+    gap: 1.125rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sbHeader_menu {
+    display: var(--flexbox);
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    background: transparent !important;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    border: none;
+}
+
+.sbHeader_menu--active {
+    margin-left: 17rem;
+}
+
+.sbHeader_menu .sbHeader_line, .sbHeader_menu--active .sbHeader_line {
+    background-color: var(--text-secondary);
+    width: 100%;
+    height: 8%;
+    transform-origin: 4%;
+    transition: all .3s;
+    border-radius: 5px;
+}
+
+.sbHeader_menu .sbHeader_line:nth-child(2) {
+    width: 75%;
+}
+
+.sbHeader_menu .sbHeader_line:last-child {
+    width: 50%;
+}
+
+.sbHeader_menu--active .sbHeader_line:first-child {
+    transform: rotate(45deg);
+}
+
+.sbHeader_menu--active .sbHeader_line:nth-child(2) {
+    opacity: 0;
+}
+
+.sbHeader_menu--active .sbHeader_line:last-child {
+    width: 100%;
+    transform: rotate(-45deg);
+}
+
+.sbHeader_bienvenida span {
+    font-family: var(--textoResaltado);
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+
+.sbHeader_buscar {
+    display: var(--flexbox);
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid var(--bg-border);
+    background-color: var(--bg-lightMode);
+    border-radius: 15px;
+    padding-right: 1rem;
+}
+
+input[name = "buscar"] {
+    border: none;
+    padding: .313rem .875rem;
+    width: 18vw;
+    background: none !important;
+    color: var(--text-secondary);
+    outline: none;
+    transition: all .3s;
+}
+
+input[name = "buscar"]:focus {
+    color: var(--text-primary);
+}
+
+
+.sbHeader_darkmode {
+    display: var(--flexbox);
+}
+
+input[type = "checkbox"] {
+    appearance: none;
+    visibility: hidden;
+    display: none;
+}
+
+.sbHeader_check {
+    display: inline-block;
+    position: relative;
+    width: 3.35rem;
+    height: 1.4rem;
+    cursor: pointer;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all .5s ease-in;
+    background-color: var(--bg-darkMode);
+    box-shadow: 0px 0px 6px var(--bg-darkMode);
+}
+
+input[type = "checkbox"]:checked ~ .sbHeader_check {
+    background-color: var(--color-textCardButton);
+    box-shadow: 0px 0px 6px var(--color-textCardButton);
+}
+
+.sbHeader_check::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background-color: var(--color-textCardButton);
+    width: 33%;
+    height: 80%;
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+input[type="checkbox"]:checked ~ .sbHeader_check:before {
+    transform: translateX(-50px);
+}
+
+.sbHeader_check::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: var(--bg-darkMode);
+    width: 33%;
+    height: 80%;
+    border-radius: 50%;
+    transition: all .5s;
+    transform: translateX(50px);
+}
+
+input[type="checkbox"]:checked ~ .sbHeader_check::after {
+    transform: translateX(0px);
+}
+
+.sbHeader_notif {
+    display: var(--flexbox);
+    align-items: center;
+    background: transparent !important;
+    border: none;
+}
+
+.ri-notification-3-line {
+    font-size:  1.5rem;
+}
+
+.sbHeader_notif-num {
+    display: var(--flexbox);
+    background-color: red;
+    /* padding: 5px; */
+    justify-content: center;
+    align-items: center;
+    height: .8rem;
+    width: .8rem;
+    border-radius: 50%;
+    position: relative;
+    top: -9px;
+    left: -10px;
+    border: 2px solid var(--bg-lightMode);
+}
+
+
+.sbNavbar {
+    display: var(--flexbox);
+    width: 17rem;
+    height: 100vh;
+    position: inherit;
+    top: 0;
+    background-color: lightblue; /* ELIMINAR LUEGO */
+    padding: 1rem;
+}
+
+.sbNavbar_header {
+    display: var(--flexbox);
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: fit-content;
+    gap: 16px;
+}
+
+.sbNavbar_logo {
+    width: 3rem;
+    height: 3rem;
+}
+
+.sbNavbar_textLogo {
+    font-family: var(--textoTitulo);
+    font-size: 1.7rem;
+    font-weight: 500;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+}
+
+.sbNavbar_textLogo strong {
+    font-weight: 700;
+    font-variant: normal;
+    text-transform: none;
+    letter-spacing: .175rem;
+}
+
+/* FIN SIDEBAR ✔ */
