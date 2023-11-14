@@ -21,7 +21,6 @@ body {
 
 .sidebar {
     position: fixed;
-    width: 100vw;
 }
 
 .sbHeader {
@@ -31,6 +30,8 @@ body {
     align-items: center;
     background-color: lightcoral; /* ELIMINAR LUEGO */
     padding: 1.1rem 1.5rem;
+    margin-left: 23vw;
+    width: calc(100vw - 23vw);
 }
 
 .sbHeader_grupo1, .sbHeader_grupo2, .sbHeader_grupo3 {
@@ -50,10 +51,6 @@ body {
     height: 2rem;
     cursor: pointer;
     border: none;
-}
-
-.sbHeader_menu--active {
-    margin-left: 17rem;
 }
 
 .sbHeader_menu .sbHeader_line, .sbHeader_menu--active .sbHeader_line {
@@ -210,7 +207,8 @@ input[type="checkbox"]:checked ~ .sbHeader_check::after {
 .sbNavbar {
     display: var(--flexbox);
     flex-direction: column;
-    width: 17rem;
+    flex-wrap: wrap;
+    width: 23vw;
     height: 100vh;
     position: inherit;
     top: 0;
@@ -252,6 +250,7 @@ input[type="checkbox"]:checked ~ .sbHeader_check::after {
 .sbNavbar_main {
     display: var(--flexbox);
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .sbNavbar_list {
