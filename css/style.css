@@ -88,6 +88,7 @@ body {
     font-size: 1.25rem;
     font-weight: 500;
     letter-spacing: 1px;
+    color: var(--text-primary);
 }
 
 
@@ -213,7 +214,7 @@ input[type="checkbox"]:checked ~ .sbHeader_check::after {
     position: inherit;
     top: 0;
     background-color: lightblue; /* ELIMINAR LUEGO */
-    padding: 1rem;
+    padding: 1rem 0 1rem 1rem;
     gap: 2rem;
 }
 
@@ -232,12 +233,17 @@ input[type="checkbox"]:checked ~ .sbHeader_check::after {
 }
 
 .sbNavbar_textLogo {
+    display: var(--flexbox);
+    flex-wrap: wrap;
+    justify-content: flex-start;
     font-family: var(--textoTitulo);
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 500;
     font-variant: small-caps;
     text-transform: capitalize;
     letter-spacing: 1.5px;
+    line-height: 4vh;
+    color: var(--text-primary);
 }
 
 .sbNavbar_textLogo strong {
@@ -245,16 +251,41 @@ input[type="checkbox"]:checked ~ .sbHeader_check::after {
     font-variant: normal;
     text-transform: none;
     letter-spacing: .175rem;
+    margin-right: .5rem;
 }
 
 .sbNavbar_main {
     display: var(--flexbox);
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: 1.25rem;
 }
 
 .sbNavbar_list {
     list-style: none;
+}
+
+.sbNavbar_list-item {
+    color: var(--text-primary);
+    margin-bottom: 2vh;
+    padding: .5rem;
+}
+
+.sbNavbar_list-item--active {
+    position: relative;
+    background-color: var(--bg-lightMode);
+    border-radius: 10px 0 0 10px;
+}
+
+.sbNavbar_list-item a {
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.sbNavbar_list-item a:hover, .sbNavbar_list-item--active {
+    color: var(--text-highlight);
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
 /* FIN SIDEBAR ✔ */
