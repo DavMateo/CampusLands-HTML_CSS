@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ejercicio Flexbox | Bloques paralelos</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            .contenedor {
+                display: flex;
+                width: calc(100vw - (.5rem * 2));
+                background-color: rgba(123, 198, 199, .8);
+                margin: .5rem;
+            }
+
+            .contenedor_lista {
+                display: flex;
+                list-style: none;
+                font-family: sans-serif;
+                color: #000;
+            }
+
+            .contenedor_lista-item {
+                width: calc((100vw - (.5rem * 2))/ 3);
+                border-right: 3px solid #fff;
+                padding: .5rem;
+            }
+
+            .contenedor_lista-item p {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="contenedor">
+            <ul class="contenedor_lista">
+                <li class="contenedor_lista-item">
+                    <p>Solo tengo una línea</p>
+                </li>
+
+                <li class="contenedor_lista-item">
+                    <p>
+                        Este texto ocupa algo más que el de al lado. <br />
+                        Son dos líneas.
+                    </p>
+                </li>
+
+                <li class="contenedor_lista-item">
+                    <p>Este es más largo que los otros dos y ocupa más líneas.</p>
+                    <br />
+                    <p>Pero todos estos bloques tienen la misma altura y anchura, crecen o se contraen para repetirse el ancho disponible</p>
+                    <br />
+                </li>
+            </ul>
+        </div>
+    </body>
+
+</html>
