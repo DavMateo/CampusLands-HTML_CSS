@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Flexbox | Propiedad Order</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-size: 16px;
+                font-family: sans-serif;
+            }
+            
+            #encabezado {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 1.45rem;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                letter-spacing: 1.5px;
+                background-color: lightcoral;
+            }
+            
+            .encabezado_titulo span {
+                font-variant: small-caps;
+                text-transform: capitalize;
+            }
+            
+            #principal {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                gap: 3rem;
+                padding: 2.7rem 1.45rem 1.45rem 1.45rem;
+                background-color: lightblue;
+            }
+            
+            .informacion {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                justify-content: center;
+                align-content: center;
+                line-height: 1.35rem;
+            }
+            
+            .informacion_parrafo strong {
+                font-variant: small-caps;
+                font-style: oblique;
+                text-transform: capitalize;
+            }
+            
+            .ejercicio {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .ejercicio_ejemplo {
+                display: flex;
+                align-items: center;
+                background-color: lightyellow;
+                padding: 2rem;
+                border-radius: .5rem;
+            }
+            
+            .ejercicio_contenedor {
+                display: flex; /* Necesario para agregar el "order" en los elementos hijo */
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                padding: 1.35rem;
+                border: 2px solid #000;
+                border-radius: .5rem;
+            }
+            
+            .ejercicio_ejemplo-titulo, .ejercicio_ejemplo-tituloCol {
+                margin-bottom: 1.65rem;
+            }
+            
+            .ejercicio_ejemplo-tituloCol {
+                font-size: 1.25rem
+            }
+            
+            .ejercicio_contenedor div {
+                display: flex;
+                gap: 1rem;
+            }
+            
+            .ejercicio_contenedor-item {
+                display: inline-flex;
+                width: 5vw;
+                height: 5vw;
+                border: 1px solid #000;
+                justify-content: center;
+                align-items: center;
+                border-radius: .5rem;
+            }
+            
+            .ejercicio_contenedor-item:nth-child(1) {
+                background-color: #a2d2ff;
+                order: 4;
+            }
+            
+            .ejercicio_contenedor-item:nth-child(2) {
+                background-color: #caffbf;
+                order: 3;
+            }
+            
+            .ejercicio_contenedor-item:nth-child(3) {
+                background-color: #ffadad;
+                order: 1;
+            }
+            
+            .ejercicio_contenedor-item:nth-child(4), .ejercicio_contenedor-item:nth-child(5) {
+                background-color: #bdb2ff;
+                order: 2;
+            }
+            
+            .ejercicio_contenedor-columna {
+                display: flex;
+                flex-direction: column;
+                margin-left: 2.75rem;
+                gap: .35rem;
+                border: 2px solid #000;
+                border-radius: .5rem;
+                justify-content: center;
+                align-items: center;
+                padding: 1.5rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header id="encabezado">
+            <h1 class="encabezado_titulo">Flexbox - Propiedad <span>Order</span></h1>
+        </header>
+
+        <main id="principal">
+            <section class="informacion">
+                <p class="informacion_parrafo">
+                    Lo que hace la propiedad <strong>order</strong> de CSS cuando se está usando <strong>Flexbox</strong> es 
+                    el <strong>reorganizar los elementos hijo</strong> que pertenecen a un contenedor padre flexible (display 
+                    flexbox). Si bien se puede cambiar el orden de los elementos desde el código fuente, CSS también lo permite 
+                    hacer sin tocar el HTML. Por defecto, la propiedad <strong>order</strong> estará establecida en 
+                    <strong>0</strong> para todos los elementos hijo dentro de un flexbox, pero puede modificarse ese valor para 
+                    así afectar el <strong>orden en que se visualiza</strong>.
+                </p>
+
+                <p class="informacion_parrafo">
+                    La propiedad acepta valores numéricos tanto positivos (El valor 0 siempre será visualizado como el primer 
+                    elemento del flexbox) como negativos (Entre más este el valor lejos de 0, se visualizará como el primer elemento 
+                    del flexbox sin importar si hay otros con valor de 0).
+                </p>
+
+                <p class="informacion_parrafo">
+                    Si hay elementos con un <strong>valor order idénticos</strong>, se visualizará en el mismo órden en que aparece 
+                    en el código fuente.
+                </p>
+            </section>
+
+            <h2>Ejemplos</h2>
+
+            <section class="ejercicio">
+                <article class="ejercicio_ejemplo"> <!-- Contenedor Padre -->
+                    <div class="ejercicio_contenedor">
+                        <h3 class="ejercicio_ejemplo-titulo">Horizontal:</h3>
+
+                        <div>
+                            <div class="ejercicio_contenedor-item">1</div>
+                            <div class="ejercicio_contenedor-item">2</div>
+                            <div class="ejercicio_contenedor-item">3</div>
+                            <div class="ejercicio_contenedor-item">4</div>
+                        </div>
+                    </div>
+
+                    <div class="ejercicio_contenedor-columna">
+                        <h3 class="ejercicio_ejemplo-tituloCol">Vertical:</h3>
+
+                        <div class="ejercicio_contenedor-item">1</div>
+                        <div class="ejercicio_contenedor-item">2</div>
+                        <div class="ejercicio_contenedor-item">3</div>
+                        <div class="ejercicio_contenedor-item">4</div>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer id="pieDePagina"></footer>
+    </body>
+
+</html>
