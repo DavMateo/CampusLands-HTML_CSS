@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.45rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1.5px;
+    background-color: lightcoral;
+}
+
+.encabezado_titulo span {
+    font-variant: small-caps;
+    text-transform: capitalize;
+}
+
+#principal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2.7rem 1.45rem 1.45rem 1.45rem;
+    background-color: lightblue;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-content: center;
+    line-height: 1.35rem;
+}
+
+.informacion_parrafo strong {
+    font-variant: small-caps;
+    font-style: oblique;
+    text-transform: capitalize;
+}

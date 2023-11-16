@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=ddevice-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>CSS Flexbox | Propiedad Flexgrow</title>
+    </head>
+
+    <body>
+        <header id="encabezado">
+            <h1 class="encabezado_titulo">Flexbox - Propiedad <span>Flexgrow</span></h1>
+        </header>
+
+        <main id="principal">
+            <section class="informacion">
+                <p class="informacion_parrafo">
+                    La propiedad <strong>flexgrow</strong> lo que hace es darle un ancho a los elementos hijo de un <strong>contenedor flexible</strong>
+                    en proporción a cuántos elementos estén en el y el número dado a cada elemento hijo. Esto quiere decir que con <strong>flexgrow 
+                    no necesitamos usar width en los elementos hijo</strong>, pues esta propiedad se encargará de darle ese width según el 
+                    <strong>viewport width</strong> del dispositivo en que se está visualizando.
+                </p>
+
+                <p class="informacion_parrafo">
+                    La forma en como se le especifica el valor a esta propiedad es mediante números enteros iniciando desde 0. Entre mayor sea el 
+                    número, más ancho ocupará dentro del contenedor padre. El <strong>valor por defecto</strong> es 0, eso significa que es como 
+                    si la <strong>propiedad estuviera en ninguno o none</strong> y por tanto, los elementos hijo sólo ocuparán el <strong>ancho 
+                    y alto necesarios</strong>.
+                </p>
+                
+                <p class="informacion_parrafo">
+                    Cabe destacar que el contenedor padre deber tener la propiedad <strong>display: flex</strong> y que <strong>flexgrow</strong> 
+                    se le asigna a cada uno de los elementos hijo. El elemento hijo que tenga el <strong>número más alto en flexgrow</strong> 
+                    será el que ocupará <strong>más espacio</strong> dentro del contenedor y lo mismo sucede con el elemento hijo con el 
+                    <strong>número más bajo</strong> pero <strong>al contrario, ocupará menos espacio</strong>.
+                </p>
+            </section>
+
+            <h2>Ejemplos</h2>
+
+            <section class="ejercicio">
+                <br />
+                <h3>Flex Grow con valores por defecto (0 / 0 / 0)</h3>
+                <br />
+
+                <article class="ejercicio_contenedor1">
+                    <div class="item item1">1</div>
+                    <div class="item item2">2</div>
+                    <div class="item item3">3</div>
+                </article>
+
+                <br />
+                <h3>Flex Grow con valores iguales (1 / 1 / 1)</h3>
+                <br />
+
+                <article class="ejercicio_contenedor2">
+                    <div class="item item1">1</div>
+                    <div class="item item2">2</div>
+                    <div class="item item3">3</div>
+                </article>
+
+                <br />
+                <h3>Flex Grow con valores distintos (4 / 1 / 3)</h3>
+                <br />
+
+                <article class="ejercicio_contenedor3">
+                    <div class="item item1">1</div>
+                    <div class="item item2">2</div>
+                    <div class="item item3">3</div>
+                </article>
+            </section>
+        </main>
+
+        <footer id="pieDePagina"></footer>
+    </body>
+
+</html>
