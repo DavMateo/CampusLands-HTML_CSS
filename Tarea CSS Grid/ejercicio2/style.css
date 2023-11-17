@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* overflow: hidden; Solución fácil y rápida :) */
+}
+
+#encabezado {
+    display: flex;
+    padding: 1rem;
+    background-color: lightcoral;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#principal {
+    margin: 20px auto;
+    display: grid;
+    width: 60vw;
+    height: calc(100vh - (1rem * 2) - 2.7rem);
+    /* background-color: lightblue; */
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:    "principal principal uno dos"
+                            "principal principal tres cuatro"
+                            "cinco seis siete ocho";
+    gap: 5px;
+    color: #fff;
+}
+
+.tarjeta {
+    display: flex;
+    grid-area: principal;
+    background-color: #151f29;
+    flex-direction: column;
+    padding: 1.45rem;
+    gap: .75rem;
+    border-radius: 15px;
+}
+
+.tarjeta_titulo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tarjeta_texto {
+    width: 65%;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1 {
+    grid-area: uno;
+}
+
+.item1 .item_imagen {
+    background-color: #ea9c38;
+}
+
+.item2 {
+    grid-area: dos;
+}
+
+.item2 .item_imagen {
+    background-color: #151f29;
+}
+
+.item3 {
+    grid-area: tres;
+}
+
+.item3 .item_imagen {
+    background-color: #151f29;
+}
+
+.item4 {
+    grid-area: cuatro;
+}
+
+.item4 .item_imagen {
+    background-color: #151f29;
+}
+
+.item5 {
+    grid-area: cinco;
+}
+
+.item5 .item_imagen {
+    background-color: #ea9c38;
+}
+
+.item6 {
+    grid-area: seis;
+}
+
+.item6 .item_imagen {
+    background-color: #151f29;
+}
+
+.item7 {
+    grid-area: siete;
+}
+
+.item7 .item_imagen {
+    background-color: #151f29;
+}
+
+.item8 {
+    grid-area: ocho;
+}
+
+.item8 .item_imagen {
+    background-color: #151f29;
+}
+
+.item_imagen {
+    display: flex;
+    width: 11rem;
+    height: 11rem;
+    /* border: 1px solid #fff; */
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_imagen-icon {
+    width: 70%;
+    height: 70%;
+}
