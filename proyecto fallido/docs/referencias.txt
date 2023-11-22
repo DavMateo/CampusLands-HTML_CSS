@@ -4,3 +4,6 @@ ed = Encabezado derecha
 nbh = NavBar Header
 nbm = NavBar Main
 nbf = NavBar Footer
+ph = Principal Header
+pm = Principal Main
+cl = Card Lavadora

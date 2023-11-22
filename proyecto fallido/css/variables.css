@@ -12,6 +12,7 @@
     --flexbox: flex;
     --flexbox-inline: inline-flex;
     --gridbox: grid;
+    --gridbox-inline: inline-grid;
     --font_text: 'Open Sans', 'Ubuntu', arial, helvetica, sans-serif, serif;
     --font_subtitle: 'Oxygen', 'Ubuntu Condensed', 'Open Sans', arial, helvetica, sans-serif, serif;
     --font_title: 'Roboto Mono', 'Ubuntu Mono', 'Ubuntu Condensed', 'Open Sans', arial, helvetica, sans-serif, serif;
