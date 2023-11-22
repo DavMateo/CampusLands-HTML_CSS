@@ -1,0 +1,102 @@
+<!-- Uso métodología en las clases: Metodología BEM -->
+<!-- Página principal -->
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Panel de control para administrar todos los dispositivos IoT en un solo lugar, simplificando la información recolectada en un ambiente con alto flujo de datos." />
+        <meta name="keywords" content="smart home, dashboard ai, local server" />
+        <meta name="robots" content="index,follow" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Smart Home (Nombre Provisional)</title>
+    </head>
+
+    <body>
+        <header id="encabezado">
+            <div class="encabezado_izquierda">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+                
+                <span class="encabezado_izq-Bienvenida">¡Hola David!</span>
+            </div>
+
+            <div class="encabezado_centro">
+                <span class="ec_hora">
+                    19<span class="ec_horaAnimate">:</span>47
+                </span>
+
+                <span class="ec_fecha">Mié, 22 Nov 2023</span>
+            </div>
+
+            <div class="encabezado_derecha">
+                <form class="ed_contenedor" action="https://www.google.com/search" method="get">
+                    <span class="ed_contenedor-buscar">
+                        <input type="search" name="q" id="busqueda" placeholder="Buscar aquí..." />
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                    </span>
+                </form>
+
+                <button class="ed_notificacion" title="Notificaciones">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" /><path d="M9 17v1a3 3 0 0 0 6 0v-1" /></svg>
+                </button>
+
+                <button class="ed_darkmode" title="Modo Claro/Oscuro">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon-stars" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /><path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" /><path d="M19 11h2m-1 -1v2" /></svg>
+                </button>
+
+                <button class="ed_perfil" title="Perfil">
+                    <img class="ed_perfil-img" src="./img/profile.jpeg" alt="profile" />
+                </button>
+            </div>
+        </header>
+
+        <nav id="navbar">
+            <div class="navbar_header">
+                <span class="nbh_titulo">LOGO</span>
+            </div>
+
+            <div class="navbar_main">
+                <ul class="nbm_list">
+                    <li class="nbm_list-item">
+                        <a href="#">Casa</a>
+                    </li>
+
+                    <li class="nbm_list-item">
+                        <a href="#">Dispositivos</a>
+                    </li>
+
+                    <li class="nbm_list-item">
+                        <a href="#">Automatizar</a>
+                    </li>
+
+                    <li class="nbm_list-item">
+                        <a href="#">Mapa</a>
+                    </li>
+
+                    <li class="nbm_list-item">
+                        <a href="#">Calendario</a>
+                    </li>
+
+                    <li class="nbm_list-item">
+                        <a href="#">Servidor</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbar_footer">
+                <span class="nbf_version">
+                    <a href="#">Versión 1.0.0</a>
+                </span>
+            </div>
+        </nav>
+
+        <main id="principal"></main>
+
+        <footer id="pieDePagina"></footer>
+    </body>
+
+</html>
