@@ -264,6 +264,7 @@ svg {
 .cl_header {
     display: var(--flexbox);
     width: 100%;
+    flex-grow: 0;
 }
 
 .cl_header svg {
@@ -286,6 +287,24 @@ svg {
     display: var(--flexbox);
     justify-content: space-between;
     width: 100%;
+    flex-grow: 1;
+    margin-top: 1rem;
+}
+
+.cl_main-infoEnergia, .cl_main-infoTemp, .cl_main-infoJabon {
+    display: var(--flexbox);
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cl_main-infoEnergia svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.cl_footer {
+    display: var(--flexbox);
+    flex-grow: 0;
 }
 
 
@@ -397,6 +416,7 @@ svg {
         border-radius: var(--radius_circle);
         justify-content: center;
         align-items: center;
+        margin: auto 0;
     }
 
     .cl_main-grafico svg {
@@ -410,8 +430,35 @@ svg {
         text-align: center;
     }
 
-    .cl_main-info {
+    .cl_main-infoEnergia, .cl_main-infoTemp, .cl_main-infoJabon {
+        gap: .4em;
+        padding: .3em;
+    }
 
+    .cl_footer {
+        display: var(--flexbox);
+        border-radius: 25px;
+        background: rgba(0, 0, 0, .10);
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, .35) inset;
+        margin-top: 1rem;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+        padding: .4rem 1rem;
+    }
+
+    .cl_footer-btnStop {
+        display: inherit;
+        padding: .25em;
+        justify-content: center;
+        align-items: center;
+        border-radius: var(--radius_circle);
+        background-color: red;
+    }
+
+    .cl_footer svg {
+        width: 1.25em;
+        height: 1.25em;
     }
 
     .principal_footer {
