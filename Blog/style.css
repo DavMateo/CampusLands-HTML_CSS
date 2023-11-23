@@ -13,6 +13,7 @@
 body {
   background-color: #011627;
   color: #FCFCFC;
+  overflow-x: hidden;
 }
 
 .encabezado {
