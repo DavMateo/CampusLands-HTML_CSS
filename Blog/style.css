@@ -17,13 +17,18 @@ body {
 
 .encabezado {
   display: flex;
-  width: calc(100vw - 23.3vw);
+  width: calc(100vw - 22.5vw);
   background-color: rgba(0, 0, 0, 0.7);
   align-items: center;
   justify-content: space-between;
   padding: 1.25rem 1.8rem;
   float: right;
-  /* z-index: 10; */
+}
+
+.encabezado_icon {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
 }
 
 h1, .link1 {
@@ -43,6 +48,60 @@ h1, .link1 {
   transition: .5s;
 }
 
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 88vw;
+  position: fixed;
+  padding: 0 1rem 1rem 1rem;
+  top: 0;
+  left: 0;
+  font-size: 140%;
+  background: rgba(255, 255, 255, .55);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5) inset, 0 0 12px 0 rgba(255, 255, 255, .55);
+  backdrop-filter: blur(2px);
+}
+
+.nav_main {
+  display: flex;
+}
+
+.nav_list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh / 3);
+  width: 15rem;
+  background-color: lightblue;
+  margin: .5rem;
+  transition: .4s all ease;
+  border-radius: 1rem;
+}
+
+.nav_list-item:hover {
+  background-color: lightcoral;
+}
+
+.nav_list-item a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 800;
+  font-family: ubuntu, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 26px;
+  letter-spacing: .125rem;
+
+}
+
+.nav_list-item:last-child {
+  border-bottom: 2rem solid rgba(255, 255, 255, .55);
+}
+
+
 .slidebar {
   display: flex;
   width: 22vw;
@@ -52,7 +111,6 @@ h1, .link1 {
   top: 0;
   background-color: rgba(255, 255, 255, 0.15);
   box-shadow: 0px 0px 18px 2px rgba(255, 255, 255, 0.4);
-  /* z-index: -1; */
   padding: 15px;
   flex-direction: column;
   overflow: auto;
@@ -88,6 +146,7 @@ h1, .link1 {
 
 .slidebar::-webkit-scrollbar {
     -webkit-appearance: none;
+    background-color: #f1f1f1;
 }
 
 .slidebar::-webkit-scrollbar:vertical {
@@ -113,38 +172,30 @@ h1, .link1 {
 }
 
 
-.slidebar::-moz-scrollbar {
-  -moz-appearance: none;
+/* Estilos de la barra de desplazamiento en Firefox */
+.slidebar {
+  scrollbar-color: #797979 #f1f1f1;
 }
 
-.slidebar::-moz-scrollbar:vertical {
-  width: .5rem;
+/* Estilos del track en Firefox */
+.slidebar::-moz-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 10px;
 }
 
-.slidebar::-moz-scrollbar-button:increment,.contenedor::-moz-scrollbar-button {
-  display: none;
-}
-
-.slidebar::-moz-scrollbar:horizontal {
-  height: .5rem
-}
-
+/* Estilos del thumb en Firefox */
 .slidebar::-moz-scrollbar-thumb {
   background-color: #797979;
   border-radius: 20px;
   border: 1px solid #f1f2f3;
 }
 
-.slidebar::-moz-scrollbar-track {
-  border-radius: 10px;
-}
 
 
 
 .encabezado_menu {
   display: flex;
   width: 100%;
-  /* height: 36%; */
   border-bottom: 1px solid #565752;
   flex-direction: column;
   align-items: center;
@@ -297,13 +348,18 @@ span.material-icons {
   right: -5px;
 }
 
-.seccion1 {
+.seccion1, .seccion2 {
   display: flex;
   float: right;
   margin: 1.563rem 2.188rem;
   width: 70%;
   flex-direction: column;
   align-items: center;
+}
+
+.seccion2 {
+  display: grid;
+  gap: 1.5rem;
 }
 
 .article1 {
@@ -325,7 +381,328 @@ span.material-icons {
   margin: 2rem 0 1rem 0;
 }
 
-.post1, .post2 {
+.card {
+  display: var(--flexbox);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5) inset, 0px 0px 8px 0px rgba(255, 255, 255, .25);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-family: poppins, ubuntu, arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.card h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card_img {
+  width: 26vw;
+  height: 26vw;
+  border-radius: 15px;
+}
+
+
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  .descripcion {
+    font-size: 100%;
+    line-height: 1.25rem;
+  }
+
+  .slidebar, .circle {
+    display: none;
+  }
+
+  .encabezado {
+    width: 100vw;
+    float: none;
+    padding: 1.25rem 1rem;
+  }
+
+  .encabezado h1 {
+    font-size: 24px;
+  }
+
+  .encabezado_icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container_line {
+    display: flex;
+    width: 100%;
+  }
+
+  .line {
+    margin: 2.35rem auto;
+  }
+
+  .seccion1, .seccion2 {
+    width: calc(100vw - (1.25rem * 2));
+    float: none;
+    margin: 0;
+  }
+
+  .seccion2 {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas:  "uno"
+                          "uno"
+                          "uno"
+                          "dos"
+                          "dos"
+                          "dos"
+                          "tres"
+                          "tres"
+                          "tres";
+    width: 70vw;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 1.55rem;
+  }
+
+  .card:nth-child(1) {
+    grid-area: uno;
+  }
+
+  .card:nth-child(2) {
+    grid-area: dos;
+  }
+
+  .card:nth-child(3) {
+    grid-area: tres;
+  }
+
+  .card h2 {
+    font-size: 170%;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+  }
+
+  .card a, .card a img {
+    width: 55vw;
+    height: 50vw;
+  }
+}
+
+
+@media (min-width: 480px) and (max-width: 960px) {
+  body {
+    font-size: 14px;
+  }
+
+  .descripcion {
+    font-size: 100%;
+    line-height: 1.35rem;
+  }
+
+  .slidebar {
+    display: none;
+  }
+
+  .encabezado {
+    width: 100vw;
+    float: none;
+    padding: 1.25rem 1rem;
+  }
+
+  .encabezado h1 {
+    font-size: 26px;
+  }
+
+  .encabezado_icon {
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    right: 105px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container_line {
+    display: flex;
+    width: 100%;
+  }
+
+  .line {
+    margin: 2.35rem auto;
+  }
+
+  .seccion1, .seccion2 {
+    width: calc(100vw - (1.25rem * 2));
+    float: none;
+    margin: 0;
+  }
+
+  .seccion2 {
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:  "uno dos"
+                          "uno dos"
+                          "uno dos"
+                          "tres tres"
+                          "tres tres"
+                          "tres tres";
+    width: 70vw;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .card:nth-child(1) {
+    grid-area: uno;
+  }
+
+  .card:nth-child(2) {
+    grid-area: dos;
+  }
+
+  .card:nth-child(3) {
+    grid-area: tres;
+  }
+
+  .card h2 {
+    font-size: 160%;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+  }
+
+  .card a, .card a img {
+    width: 38vw;
+    height: 33vw;
+  }
+}
+
+
+@media (min-width: 961px) {
+  body {
+    font-size: 20px;
+  }
+
+  .descripcion {
+    font-size: 100%;
+    line-height: 1.75rem;
+  }
+
+  .encabezado_iconMenu {
+    opacity: 0;
+  }
+
+  .encabezado h1 {
+    font-size: 30px;
+  }
+
+  .encabezado_icon {
+    position: absolute;
+    width: 2.75rem;
+    height: 2.75rem;
+    right: 150px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw - 22vw);
+    margin-left: 22vw;
+  }
+
+  .container_line {
+    display: flex;
+    width: 100%;
+  }
+
+  .line {
+    margin: 2.35rem auto;
+  }
+
+  .seccion1, .seccion2 {
+    width: calc(100vw - 22vw - (1.25rem * 2));
+    margin: 0;
+  }
+
+  .seccion2 {
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:  "uno dos"
+                          "uno dos"
+                          "uno dos"
+                          "tres tres"
+                          "tres tres"
+                          "tres tres";
+    width: calc(100vw - 22vw - (1.25rem * 2));
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card:nth-child(1) {
+    grid-area: uno;
+  }
+
+  .card:nth-child(2) {
+    grid-area: dos;
+  }
+
+  .card:nth-child(3) {
+    grid-area: tres;
+  }
+
+  .card h2 {
+    font-size: 160%;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+  }
+
+  .card a, .card a img {
+    width: 30vw;
+    height: 25vw;
+  }
+}
+
+
+/* .post1, .post2 {
   display: flex;
   background-color: rgba(255, 255, 255, .15);
   width: 93.75%;
@@ -401,4 +778,4 @@ span.material-icons-round {
   height: 100%;
   overflow: hidden;
   object-fit: cover;
-}
+} */

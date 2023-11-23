@@ -1,0 +1,56 @@
+body {
+    background-color: #011627; /* Color de fondo oscuro */
+    color: #fff; /* Color del texto claro */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form {
+    width: 300px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: .5rem;
+    border: none;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #4285f4; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #1a73e8; /* Color de fondo del botón al pasar el ratón */
+}
+
+@media (max-width: 320px) {
+    form {
+        width: 80vw;
+    }
+}
