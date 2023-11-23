@@ -7,3 +7,4 @@ nbf = NavBar Footer
 ph = Principal Header
 pm = Principal Main
 cl = Card Lavadora
+cb = Card Bombillo
