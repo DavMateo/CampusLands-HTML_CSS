@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+  background: linear-gradient(130deg, #AF7AC5, #5DADE2);
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.login {
+  width: 80%;
+  max-width: 400px;
+  margin: 10% auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 4px 4px 11px 2px rgba(0, 0, 0, .2),
+              -4px -4px 11px 2px rgba(0, 0, 0, .2);
+  position: relative;
+  box-sizing: border-box;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: url(Imágenes/icon_image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.texto {
+  text-align: center;
+}
+
+.text {
+  font-size: 2em;
+  font-family: 'Poppins', 'Nunito', sans-serif;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.parrafo1 {
+  margin-bottom: 25px;
+}
+
+.user, .password {
+  height: 30px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+input.user, input.password {
+  width: 100%;
+  border: 2px solid rgba(255, 0, 0, .0);
+  border-radius: 8px;
+  text-indent: 8.5px;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+input[type="Usuario"]:focus, input[type="password"]:focus {
+  border: 2px solid #3498DB;
+  transition: .3s;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 20px 0;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  border: 2px solid rgba(255, 255, 255, .0);
+  border-radius: 15px 0px;
+  outline: none;
+  font-family: 'Poppins', 'Nunito', sans-serif;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  border: 2px solid #3498DB;
+  transition: .3s;
+}
+
+input[type="submit"]:focus {
+  animation-name: fondo;
+  animation-duration: .2s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes fondo {
+  0% {
+    background: #EFEFEF;
+  }
+
+  100% {
+    background: linear-gradient(130deg, #2E86C1, #85C1E9);
+  }
+}
+
+.p1, .p2 {
+  display: inline-block;
+  padding: 7px;
+  border-radius: 15px 0px;
+  font-size: 1em;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: -0.3px;
+  text-decoration: none;
+  color: #000;
+  margin-right: 10%;
+}
+
+.p1:hover, .p2:hover {
+  background-color: rgba(0, 0, 0, .35);
+  color: #ECF0F1;
+  transition: .3s;
+}
+
+.p2 {
+  margin-right: 10%;
+}
+
+/* Media Queries para tamaños de pantalla específicos */
+
+@media screen and (max-width: 480px) {
+  .login {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .login {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 960px) {
+  .login {
+    width: 60%;
+  }
+}
