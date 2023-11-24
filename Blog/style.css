@@ -192,6 +192,29 @@ h1, .link1 {
 }
 
 
+.ed_contenedor {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.35rem;
+}
+
+.ed_contenedor-buscar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3vw;
+  height: 3vw;
+}
+
+.ed_contenedor-buscar input {
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+}
 
 
 .encabezado_menu {
