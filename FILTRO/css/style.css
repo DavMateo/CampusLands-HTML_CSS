@@ -46,6 +46,7 @@ body {
 .menu ul li a {
     text-decoration: none;
     color: #000;
+    transition: .3s all ease-in;
 }
 
 .menu ul li a:hover {
@@ -107,19 +108,24 @@ body {
     border: none;
     background: #000;
     color: #fff;
-    padding: 15px 40px;
     font-size: 1em;
     transition: background .5s linear;
+    transition: font-size .3s linear;
     -webkit-transition: background 1s linear;
     -o-transition: background 1s linear;
     -ms-transition: background 1s linear;
     -moz-transition: background 1s linear;
+    -webkit-transition: font-size .3s linear;
+    -o-transition: font-size .3s linear;
+    -ms-transition: font-size .3s linear;
+    -moz-transition: font-size .3s linear;
 }
 
 .callAction button:hover {
     background-color: #4A4959;
     font-size: 1.1em;
     line-height: 1.5em;
+    box-shadow: 0 0 8px #000;
 }
 
 .infoBox {
@@ -204,8 +210,10 @@ body {
 }
 
 
-@media (max-width: 480px) {
-    /* AQUÍ VA LOS ESTILOS NO GENERALES DEL CÓDIGO CSS ANTERIOR A ESTA QUERY */
+@media (min-width: 0px) and (max-width: 375px) {
+    .imagenFondo img {
+        width: 18.4rem;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -275,7 +283,7 @@ body {
                             "article1 article2";
         justify-content: center;
         align-items: flex-start;
-        gap: 4.25rem;
+        gap: 3.75rem;
     }
 
     .articles h2 {
@@ -315,6 +323,10 @@ body {
     .callAction h2, .infoBox h2, .articles h2 {
         font-size: 40px;
     }
+
+    .callAction h2 {
+        width: 90%;
+    }
 }
 
 
@@ -323,6 +335,10 @@ body {
 @media (min-width: 1440px) {
     body {
         font-size: 24px;
+    }
+
+    #encabezado {
+        padding: 1.5rem;
     }
 
     .callAction {
