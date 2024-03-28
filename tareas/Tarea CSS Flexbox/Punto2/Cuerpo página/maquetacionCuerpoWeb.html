@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Maquetación Cuerpo Página Web</title>
+        
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #principal {
+                display: flex;
+                width: 100vw;
+                height: 50vh;
+                font-size: 20px;
+                padding: 1rem;
+            }
+
+            .colIzquierda {
+                width: 60%;
+                background-color: #0e7b75;
+                color: #fff;
+                padding: 1rem;
+            }
+
+            .colDerecha {
+                width: 40%;
+                border: 1px solid #d6d6d6;
+                border-left: none;
+            }
+
+            .derechaAlta, .derechaBaja {
+                width: 100%;
+                height: calc((50vh / 2) - 1.09rem);
+                padding: 2.25rem;
+            }
+
+            .derechaAlta {
+                border-bottom: 1px solid #d6d6d6;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main id="principal">
+            <div class="colIzquierda">Columna izquierda</div>
+            <div class="colDerecha">
+                <div class="derechaAlta">Derecha <br/> parte alta</div>
+                <div class="derechaBaja">Derecha <br/> parte baja</div>
+            </div>
+        </main>
+    </body>
+
+</html>

@@ -1,0 +1,412 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+#encabezado {
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    max-width: 1024px;
+    max-height: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    margin-right: 1rem;
+}
+
+.menu ul li:nth-child(3) {
+    margin: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: .3s all ease-in;
+}
+
+.menu ul li a:hover {
+    color: #5E5D6E;
+}
+
+.imagenFondo {
+    display: flex;
+    background-image: url("./../img/enium-fondo.jpg");
+    width: 100vw;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+}
+
+.imagenFondo img {
+    width: 22.45rem;
+}
+
+
+
+#principal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.callAction {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 170px 0;
+}
+
+.callAction h2 {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 1.25rem;
+    font-size: 32px;
+}
+
+.callAction p {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.callAction button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 40px;
+    border: none;
+    background: #000;
+    color: #fff;
+    font-size: 1em;
+    transition: background .5s linear;
+    transition: font-size .3s linear;
+    -webkit-transition: background 1s linear;
+    -o-transition: background 1s linear;
+    -ms-transition: background 1s linear;
+    -moz-transition: background 1s linear;
+    -webkit-transition: font-size .3s linear;
+    -o-transition: font-size .3s linear;
+    -ms-transition: font-size .3s linear;
+    -moz-transition: font-size .3s linear;
+}
+
+.callAction button:hover {
+    background-color: #4A4959;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    box-shadow: 0 0 8px #000;
+}
+
+.infoBox {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    gap: 4rem;
+    padding-bottom: 5rem;
+}
+
+.infoBox h2 {
+    margin-top: 4rem;
+    font-size: 32px;
+}
+
+.infoBox article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    gap: 2rem;
+}
+
+.infoBox article i {
+    display: block;
+}
+
+.infoBox article p {
+    text-align: center;
+    text-wrap: wrap;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    align-items: center;
+    padding-bottom: calc(3.5rem + 1.5rem);
+    justify-content: center;
+}
+
+.articles h2 {
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 32px;
+}
+
+.articles article {
+    margin-bottom: 3.5rem;
+}
+
+.articles article:last-child {
+    margin: 0;
+}
+
+.articles article img {
+    width: 100%;
+    margin-bottom: .65rem;
+}
+
+
+
+
+
+#pieDePagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #000;
+    height: 210px;
+}
+
+#pieDePagina i {
+    font-size: 1.85em
+}
+
+
+@media (min-width: 0px) and (max-width: 375px) {
+    .imagenFondo img {
+        width: 18.4rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    .callAction {
+        margin: 180px 0;
+    }
+
+    .callAction h2, .infoBox h2, .articles h2 {
+        font-size: 36px;
+    }
+
+    .infoBox {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(10, auto);
+        grid-template-areas:"titulo titulo"
+                            "titulo titulo"
+                            "titulo titulo"
+                            "articulo1 articulo2"
+                            "articulo1 articulo2"
+                            "articulo1 articulo2"
+                            "articulo1 articulo2"
+                            "articulo3 articulo3"
+                            "articulo3 articulo3"
+                            "articulo3 articulo3";
+        justify-content: center;
+        align-items: center;
+        padding: 4.5rem 4.5rem 10rem 4.5rem;
+    }
+
+    .infoBox h2 {
+        grid-area: titulo;
+        justify-self: center;
+    }
+
+    .infoBox article:nth-child(2) {
+        grid-area: articulo1;
+    }
+
+    .infoBox article:nth-child(3) {
+        grid-area: articulo2;
+    }
+
+    .infoBox article:nth-child(4) {
+        grid-area: articulo3;
+        width: 50%;
+        justify-self: center;
+    }
+
+    .infoBox article {
+        width: 100%;
+    }
+
+
+    .articles {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:"title title"
+                            "article1 article2"
+                            "article1 article2"
+                            "article1 article2"
+                            "article1 article2";
+        justify-content: center;
+        align-items: flex-start;
+        gap: 3.75rem;
+    }
+
+    .articles h2 {
+        grid-area: title;
+        height: fit-content;
+        text-align: center;
+    }
+
+    .articles article:nth-child(2) {
+        grid-area: article1;
+    }
+
+    .articles article:nth-child(3) {
+        grid-area: article2;
+    }
+}
+
+
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    body {
+        font-size: 20px;
+    }
+
+    .callAction {
+        margin: 140px;
+    }
+
+    .infoBox {
+        padding: 8rem;
+    }
+
+    .articles {
+        padding: 2rem;
+    }
+
+    .callAction h2, .infoBox h2, .articles h2 {
+        font-size: 40px;
+    }
+
+    .callAction h2 {
+        width: 90%;
+    }
+}
+
+
+
+
+@media (min-width: 1440px) {
+    body {
+        font-size: 24px;
+    }
+
+    #encabezado {
+        padding: 1.5rem;
+    }
+
+    .callAction {
+        margin: 180px;
+    }
+
+
+
+    .infoBox {
+        display: grid;
+        padding: 10rem;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:"titulo titulo titulo"
+                            "titulo titulo titulo"
+                            "articulo1 articulo2 articulo3"
+                            "articulo1 articulo2 articulo3";
+    }
+
+    .infoBox h2 {
+        grid-area: titulo;
+        justify-self: center;
+    }
+
+    .infoBox article:nth-child(2) {
+        grid-area: articulo1;
+    }
+
+    .infoBox article:nth-child(3) {
+        grid-area: articulo2;
+    }
+
+    .infoBox article:nth-child(4) {
+        grid-area: articulo3;
+        justify-self: center;
+    }
+
+    .infoBox article {
+        width: 100%;
+    }
+
+
+    .articles {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:"title title"
+                            "title title"
+                            "article1 article2"
+                            "article1 article2";
+        justify-content: center;
+        align-items: flex-start;
+        gap: 3.75rem;
+        padding: 2rem 8rem 4.25rem 8rem;
+    }
+
+    .articles h2 {
+        grid-area: title;
+        height: fit-content;
+        text-align: center;
+    }
+
+    .articles article:nth-child(2) {
+        grid-area: article1;
+    }
+
+    .articles article:nth-child(3) {
+        grid-area: article2;
+    }
+}

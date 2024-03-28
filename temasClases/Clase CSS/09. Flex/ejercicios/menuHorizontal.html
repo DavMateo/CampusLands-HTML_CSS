@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ejercicio Flexbox | Menú horizontal</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            .navbar {
+                display: flex;
+                flex-wrap: wrap;
+                width: calc((100vw - (.4rem * 2)));
+                background-color: rgba(123, 198, 199, .8);
+                margin: .4rem;
+            }
+
+            .navbar_list {
+                display: inherit;
+                list-style: none;
+                font-family: sans-serif;
+                font-weight: 600;
+            }
+
+            .navbar_list-item {
+                display: flex;
+                width: calc((100vw - (.4rem * 2)) / 5);
+                padding: 2vw .5rem;
+                border-right: 3px solid #fff;
+            }
+
+            .navbar_list-item:last-child {
+                border: none;
+                padding-right: 0;
+            }
+
+            .navbar_list-item a {
+                text-decoration: none;
+                color: #0d2e30;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <ul class="navbar_list">
+                <li class="navbar_list-item"><a href="#">Home</a></li>
+                <li class="navbar_list-item"><a href="#">Servicios</a></li>
+                <li class="navbar_list-item"><a href="#">Opciones</a></li>
+                <li class="navbar_list-item"><a href="#">Planes</a></li>
+                <li class="navbar_list-item"><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </body>
+
+</html>

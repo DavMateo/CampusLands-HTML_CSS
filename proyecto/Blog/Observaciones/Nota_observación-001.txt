@@ -1,0 +1,16 @@
+Sitio web / Blog personal No funcional Sin responsive
+
+Errores:
+
+- Corregir las fechas en la barra izquierda de la web
+
+- Añadir un link (sin redirigir) en la parte de perfil en la barra izquierda de la web
+
+
+Para añadir:
+
+- Publicaciones con videos en las previsualizaciones (como la publicación 1)
+
+- En iniciar sesión, crear web para crear y recuperar cuenta
+
+- Crear webs como reportar o soporte (o similares) para más realismo 

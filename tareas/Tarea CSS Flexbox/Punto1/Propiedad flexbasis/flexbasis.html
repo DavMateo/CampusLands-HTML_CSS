@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=ddevice-width, initial-scale=1.0" />
+        <title>CSS Flexbox | Propiedad Flexgrow</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            #encabezado {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 1.45rem;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                letter-spacing: 1.5px;
+                background-color: lightcoral;
+            }
+            
+            .encabezado_titulo span {
+                font-variant: small-caps;
+                text-transform: capitalize;
+            }
+            
+            #principal {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                gap: 3rem;
+                padding: 2.7rem 1.45rem 1.45rem 1.45rem;
+                background-color: lightblue;
+            }
+            
+            .informacion {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                justify-content: center;
+                align-content: center;
+                line-height: 1.35rem;
+            }
+            
+            .informacion_parrafo strong {
+                font-variant: small-caps;
+                font-style: oblique;
+                text-transform: capitalize;
+            }
+            
+            .ejercicio {
+                background-color: #fff;
+            }
+            
+            .ejercicio_contenedor, .ejercicio_contenedor2 {
+                display: flex;
+                gap: 1rem;
+                padding: 1rem;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .ejercicio_contenedor-info, .ejercicio_contenedor-info2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+            }
+            
+            .item {
+                display: flex;
+                width: 10vw;
+                height: 10vw;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+                color: #fff;
+            }
+            
+            .item1, .info_item1 {
+                background-color: #003049;
+                flex-basis: 250px;
+            }
+            
+            .item2, .info_item2 {
+                background-color: #d62828;
+                flex-basis: 600px;
+            }
+            
+            .item3, .info_item3 {
+                background-color: #f77f00;
+                flex-basis: 85px;
+            }
+            
+            .info_item1, .info_item2, .info_item3 {
+                display: flex;
+                text-wrap: wrap;
+                background-color: transparent;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .ejercicio_contenedor2 .item1, .ejercicio_contenedor-info2 .info_item1 {
+                flex-basis: 600px;
+            }
+            
+            .ejercicio_contenedor2 .item2, .ejercicio_contenedor-info2 .info_item2 {
+                flex-basis: 800px;
+            }
+            
+            .ejercicio_contenedor2 .item3, .ejercicio_contenedor-info2 .info_item3 {
+                flex-basis: 1000px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header id="encabezado">
+            <h1 class="encabezado_titulo">Flexbox - Propiedad <span>Flexgrow</span></h1>
+        </header>
+
+        <main id="principal">
+            <section class="informacion">
+                <p class="informacion_parrafo">
+                    La propiedad <strong>flex-basis</strong> permite establecer un ancho base a un elemento hijo que se encuentra en un 
+                    <strong>contenedor flexible</strong>. Esto permite establecer un ancho personalizado máximo y que se irá 
+                    <strong>adaptando al viewport width</strong> del dispositivo, esto quiere decir que el elemento hijo tratará de tomar el 
+                    ancho especificado en <strong>flex-basis</strong> en caso de que la pantalla no permita mostrarlo por completo.
+                </p>
+
+                <p class="informacion_parrafo">
+                    La propiedad <strong>flex-basis</strong> recibe valores con unidades de medidas ya sean relativas o absolutas. Básicamente 
+                    es similar a emplear la propiedad <strong>width</strong> para manejar el ancho del elemento, solo que con 
+                    <strong>flex-basis</strong> no permitirá que se desborden los elementos cercanos o se dañe la visualización de la web.
+                </p>
+                
+                <p class="informacion_parrafo">
+                    El <strong>contenedor padre</strong> debe llevar la <strong>propiedad display: flex</strong> y los elementos hijo contendrán 
+                    la propiedad <strong>flex-basis</strong>, de lo contrario, no surtirá efecto esta característica.
+                </p>
+            </section>
+
+            <h2>Ejemplos</h2>
+
+            <section class="ejercicio">
+                <article class="ejercicio_contenedor">
+                    <div class="item item1">1</div>
+                    <div class="item item2">2</div>
+                    <div class="item item3">3</div>
+                </article>
+                <div class="ejercicio_contenedor-info">
+                    <div class="info_item1">Flex-basis: 250px</div>
+                    <div class="info_item2">Flex-basis: 600px</div>
+                    <div class="info_item3">Flex-basis: 85px</div>
+                </div>
+
+                <br/><br/><br/>
+
+
+                <article class="ejercicio_contenedor2">
+                    <div class="item item1">1</div>
+                    <div class="item item2">2</div>
+                    <div class="item item3">3</div>
+                </article>
+                <div class="ejercicio_contenedor-info2">
+                    <div class="info_item1">Flex-basis: 600px</div>
+                    <div class="info_item2">Flex-basis: 800px</div>
+                    <div class="info_item3">Flex-basis: 1000px</div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="pieDePagina"></footer>
+    </body>
+
+</html>

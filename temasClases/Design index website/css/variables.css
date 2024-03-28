@@ -1,0 +1,16 @@
+:root {
+    --flexbox: flex;
+    --tipografiaGlobal:'Nunito Sans', 'Rubik', Arial, Helvetica, sans-serif, serif;
+    --tipografiaTitulo: 'Roboto', 'Rubik', 'Nunito Sans', Arial, Helvetica, sans-serif, serif;
+    --tipografiaSubtitulo: 'Rubik', 'Nunito Sans', Arial, Helvetica, sans-serif, serif;
+    --colorTextoPrincipal: #FFFFFF;
+    --colorTextoSecundario: #e0e0e0;
+    --colorFondoPrincipal: #1A1A1A;
+    --colorFondoSecundario: #292929;
+    --colorBordes: #404040;
+    --colorEnfasisPrimario: #a364ff;
+    --colorEnfasisSecundario: #ffd6ff;
+    --colorFondoElementos: #2980b9;
+    --colorFondoBotones: #00a2e0;
+    --colorTextoBotonesIconos: #212f3d;
+}

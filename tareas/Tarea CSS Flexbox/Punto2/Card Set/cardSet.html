@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Card Set</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            #principal {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 2rem;
+            }
+
+            .tarjeta {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: 18vw;
+                background-color: #ffffff;
+                height: calc(20vh + 40px + 30px);
+            }
+
+            .tarjeta_header {
+                display: flex;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                background-color: #000;
+                color: #fff;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                height: 40px;
+                border: 1px solid #000;
+                font-size: 14px;
+            }
+
+            .tarjeta_main {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                gap: .8rem;
+                border: 1px solid #000;
+                border-top: none;
+                border-bottom: none;
+                padding: 1.45rem;
+            }
+
+            .tarjeta_footer {
+                display: flex;
+                width: 100%;
+                height: 30px;
+                background-color: #a9a9a9;
+                color: #fff;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main id="principal">
+            <section class="tarjeta">
+                <h3 class="tarjeta_header">Tarjeta Izquierda</h3>
+
+                <div class="tarjeta_main">
+                    <span>Contenido del cuerpo</span>
+                    <span>Contenido del cuerpo</span>
+                    <span>Contenido del cuerpo</span>
+                </div>
+
+                <div class="tarjeta_footer">
+                    <span>Pie</span>
+                </div>
+            </section>
+
+
+            <section class="tarjeta">
+                <h3 class="tarjeta_header">Tarjeta Centro</h3>
+
+                <div class="tarjeta_main">
+                    <span>Contenido del cuerpo</span>
+                </div>
+
+                <div class="tarjeta_footer"></div>
+            </section>
+
+
+            <section class="tarjeta">
+                <h3 class="tarjeta_header">Tarjeta Derecha</h3>
+
+                <div class="tarjeta_main">
+                    <span>Contenido del cuerpo</span>
+                </div>
+
+                <div class="tarjeta_footer"></div>
+            </section>
+        </main>
+    </body>
+
+</html>

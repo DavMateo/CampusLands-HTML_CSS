@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Grid | Maqueta n°1</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            .contenedorGrid {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                gap: 1.8vw;
+                height: 80vh;
+                width: 100vw;
+                background-color: #e3e4e3;
+                padding: 1.8vw;
+            }
+
+            .item1 {
+                background-color: #ff6900;
+            }
+
+            .item2 {
+                background-color: #00696c;
+            }
+
+            .item3 {
+                background-color: #6a0934;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="contenedorGrid">
+            <div class="item1"></div>
+            <div class="item2"></div>
+            <div class="item3"></div>
+        </div>
+    </body>
+
+</html>

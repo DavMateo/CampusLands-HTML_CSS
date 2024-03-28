@@ -1,0 +1,28 @@
+div {
+    border: thin solid black;
+    margin: 8px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.caja1, .caja3 {
+    border-style: dotted dashed;
+    border-color: green yellow red blue;
+    border-width: 6px;
+    margin-bottom: 25px;
+}
+
+.caja2, .caja3_1 {
+    border-style: inset solid;
+    border-color: cyan black pink;
+    border-width: 6px;
+    margin-bottom: 25px;
+}
+
+.caja3 {
+    padding: 15px;
+}
+
+.caja3_1 {
+    margin: auto auto;
+}

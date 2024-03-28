@@ -1,0 +1,118 @@
+@import url("./style.css");
+@import url("./tipografias.css");
+@import url("./variables.css");
+
+body {
+    background-color: var(--colorFondoTareas);
+}
+
+#encabezado {
+    background-color: var(--colorFondoTareas);
+}
+
+#principal {
+    display: var(--flexbox);
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 4.375rem;
+    padding: .8rem;
+    gap: 1rem;
+}
+
+.lenguajes {
+    display: var(--flexbox);
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, .55);
+    width: 100%;
+    min-height: 10rem;
+    border-radius: .625rem;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.articulo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    /* height: 16vh; */
+    border-radius: .625rem;
+    background-color: red;
+    justify-content: center;
+    padding: .8rem;
+}
+
+.articulo:first-child {
+    background-color: #FF8383;
+}
+
+.articulo:nth-child(2) {
+    background-color: #75AAFF;
+}
+
+.articulo:last-child {
+    background: linear-gradient(325deg, #FF8383, #75AAFF);
+}
+
+.articulo_encabezado {
+    display: var(--flexbox);
+    margin-bottom: .75rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.articulo_img {
+    width: 17%;
+}
+
+.articulo_encabezado-texto {
+    display: var(--flexbox);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.articulo_encabezado-info {
+    font-size: 60%;
+}
+
+.articulo_parrafo {
+    display: var(--flexbox);
+    flex-direction: column;
+    align-items: center;
+}
+
+.articulo_parrafo::before, .articulo_parrafo::before {
+    content: '';
+    width: 50%;
+    border-top: 1px solid #d9d9d9;
+    margin-bottom: .6rem;
+}
+
+.articulo_boton {
+    display: var(--flexbox);
+    padding: .5rem;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border: none;
+    border-radius: .313rem;
+    gap: .5rem;
+    background-color: rgba(255, 255, 255, .55);
+    box-shadow: 0px 0px 4px #fff;
+    text-decoration: none;
+    color: var(--colorTextoNegro);
+    font-size: .75rem;
+    transition: all .3s;
+}
+
+.articulo_boton:hover {
+    background-color: rgba(255, 255, 255, .85);
+    box-shadow: 0px 0px 12px #fff;
+    font-size: .85rem;
+}

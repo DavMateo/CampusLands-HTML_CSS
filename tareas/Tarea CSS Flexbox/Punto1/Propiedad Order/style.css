@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.45rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1.5px;
+    background-color: lightcoral;
+}
+
+.encabezado_titulo span {
+    font-variant: small-caps;
+    text-transform: capitalize;
+}
+
+#principal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2.7rem 1.45rem 1.45rem 1.45rem;
+    background-color: lightblue;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-content: center;
+    line-height: 1.35rem;
+    /* background-color: lightgreen; */
+}
+
+.informacion_parrafo strong {
+    font-variant: small-caps;
+    font-style: oblique;
+    text-transform: capitalize;
+}
+
+.ejercicio {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: lightpink; */
+    justify-content: center;
+}
+
+.ejercicio_ejemplo {
+    display: flex;
+    align-items: center;
+    background-color: lightyellow;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.ejercicio_contenedor {
+    display: flex; /* Necesario para agregar el "order" en los elementos hijo */
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.35rem;
+    border: 2px solid #000;
+    border-radius: .5rem;
+}
+
+.ejercicio_ejemplo-titulo, .ejercicio_ejemplo-tituloCol {
+    margin-bottom: 1.65rem;
+}
+
+.ejercicio_ejemplo-tituloCol {
+    font-size: 1.25rem
+}
+
+.ejercicio_contenedor div {
+    display: flex;
+    gap: 1rem;
+}
+
+.ejercicio_contenedor-item {
+    display: inline-flex;
+    width: 5vw;
+    height: 5vw;
+    border: 1px solid #000;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+.ejercicio_contenedor-item:nth-child(1) {
+    background-color: #a2d2ff;
+    order: 4;
+}
+
+.ejercicio_contenedor-item:nth-child(2) {
+    background-color: #caffbf;
+    order: 3;
+}
+
+.ejercicio_contenedor-item:nth-child(3) {
+    background-color: #ffadad;
+    order: 1;
+}
+
+.ejercicio_contenedor-item:nth-child(4), .ejercicio_contenedor-item:nth-child(5) {
+    background-color: #bdb2ff;
+    order: 2;
+}
+
+.ejercicio_contenedor-columna {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.75rem;
+    gap: .35rem;
+    border: 2px solid #000;
+    border-radius: .5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}

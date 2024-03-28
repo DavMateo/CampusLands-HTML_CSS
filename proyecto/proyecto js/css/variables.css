@@ -1,0 +1,20 @@
+:root {
+    --color_text: #212F3D;
+    --color_textHighlight: #000;
+    --color_textCard: #34495E;
+    --bg_lightMode: #E5E7F9;
+    --bg_headerNav: #fff;
+    --bg_buttonCard: rgba(0, 0, 0, .10);
+    --shadow_buttonCard: 0 0 6px 0 rgba(0, 0, 0, .35) inset;
+    --bg_card: rgba(255, 255, 255, .55);
+    --shadow_card: 0 0 6px 0 rgba(0, 0, 0, .25) inset, 0 4px 4px 0 rgba(0, 0, 0, .25);
+    --borderRadius_card: 15px;
+    --flexbox: flex;
+    --flexbox-inline: inline-flex;
+    --gridbox: grid;
+    --gridbox-inline: inline-grid;
+    --font_text: 'Open Sans', 'Ubuntu', arial, helvetica, sans-serif, serif;
+    --font_subtitle: 'Oxygen', 'Ubuntu Condensed', 'Open Sans', arial, helvetica, sans-serif, serif;
+    --font_title: 'Roboto Mono', 'Ubuntu Mono', 'Ubuntu Condensed', 'Open Sans', arial, helvetica, sans-serif, serif;
+    --radius_circle: 50%;
+}

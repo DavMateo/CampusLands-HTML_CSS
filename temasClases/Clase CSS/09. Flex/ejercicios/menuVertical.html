@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ejercicio Flexbox | Menú vertical</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            .navbar {
+                background-color: rgba(123, 198, 199, .8);
+                width: fit-content;
+                margin: .5rem;
+            }
+
+            .navbar_list {
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                font-family: sans-serif;
+                font-weight: 600;
+            }
+
+            .navbar_list-item {
+                display: flex;
+                align-items: center;
+                border-bottom: 3px solid #fff;
+                height: 4vh;
+                padding: 0 1rem;
+            }
+
+            .navbar_list-item a {
+                text-decoration: none;
+                color: #0d2e30;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <ul class="navbar_list">
+                <li class="navbar_list-item"><a href="#">Home</a></li>
+                <li class="navbar_list-item"><a href="#">Servicios</a></li>
+                <li class="navbar_list-item"><a href="#">Opciones</a></li>
+                <li class="navbar_list-item"><a href="#">Planes</a></li>
+                <li class="navbar_list-item"><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </body>
+
+</html>

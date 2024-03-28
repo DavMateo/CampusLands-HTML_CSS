@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#encabezado {
+    background-image: url("./journey-multijugador.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+#principal {
+    background-color: gold;
+    height: 50vh;
+}
+
+.imagen, .imagen_noeZavala {
+    width: 150px;
+    height: 150px;
+}
+
+.imagen {
+    margin: auto 45%;
+    border: 5px solid #fff;
+}

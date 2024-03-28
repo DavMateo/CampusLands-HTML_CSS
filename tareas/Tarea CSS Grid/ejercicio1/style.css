@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+#encabezado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: lightcoral;
+}
+
+.titulo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-areas:    "uno dos dos"
+                            "tres dos dos"
+                            "tres cuatro cinco"
+                            "tres seis siete"
+                            "ocho ocho ocho";
+    width: 40vw;
+    height: calc(100vh - ((1rem * 4)));
+    padding: 1rem;
+    gap: .75rem;
+}
+
+.item {
+    background-color: #32b2d5;
+    font-weight: bolder;
+}
+
+.item1 {
+    display: flex;
+    grid-area: uno;
+    justify-content: center;
+    align-items: center;
+}
+
+.item2 {
+    display: flex;
+    grid-area: dos;
+    justify-content: center;
+    padding-top: 12%;
+}
+
+.item3 {
+    display: flex;
+    grid-area: tres;
+    justify-content: center;
+    padding-top: 20%;
+}
+
+.item4 {
+    grid-area: cuatro;
+}
+
+.item5 {
+    grid-area: cinco;
+}
+
+.item6 {
+    grid-area: seis;
+}
+
+.item7 {
+    grid-area: siete;
+}
+
+.item8 {
+    grid-area: ocho;
+}
+
+.item4, .item5, .item6, .item7, .item8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

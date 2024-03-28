@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Maquetación con CSS</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            
+            #cabeza{
+                border-radius: 20px;
+                background-color: #8a2be2;
+                color: #7fff00;
+                width: 100vw;
+                height: 15vh;
+                text-align: center;
+                border: 8px solid #fff;
+            }
+            
+            #navbar{
+                border-radius: 20px;
+                background-color: #5f9ea0;
+                width: 100vw;
+                height: 12vh;
+                border: 8px solid #fff;  
+            }
+            
+            #principal{
+                width: 100vw;
+                border: 8px solid #fff;
+            }
+            
+            .pepe{
+                background-color: #7fffd4;
+                padding: 14px;
+                border-radius: 20px;
+                width: fit-content;
+                float: left;
+            }
+            
+            .articulo{
+                border-radius: 20px;
+                background-color: #b22222;
+                width: 65.45vw;
+                height: 10vh;
+                margin-bottom: 1.65vh;
+            }
+            
+            .articulo:nth-child(4){
+                margin-bottom: 2vh;
+            }
+            
+            .articulo_texto {
+                padding: 10px;
+            }
+            
+            .alado{
+                border-radius: 20px;
+                background-color: #deb887;
+                height: calc((10vh * 4) + (1.65vh * 4) + (14px * 2) + .6vh);
+                width: 30vw;
+                float: right;
+            }
+            
+            #pies{
+                width: 100vw;
+                background-color: #556b2f;
+                height: 12vh;
+                clear: both;
+                border-radius: 20px;
+                border: 8px solid #fff;
+                border-top: 16px solid #fff;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header id="cabeza">
+            <h1>Ejemplo de Maquetación</h1>
+        </header>
+        <nav id="navbar"></nav>
+
+        <main id="principal">
+            <section class="pepe">
+                <article class="articulo">
+                    <span class="articulo_texto">Articulo 1</span>
+                </article>
+
+                <article class="articulo">
+                    <span class="articulo_texto">Articulo 2</span>
+                </article>
+
+                <article class="articulo">
+                    <span class="articulo_texto">Articulo 3</span>
+                </article>
+
+                <article class="articulo">
+                    <span class="articulo_texto">Articulo 4</span>
+                </article>
+            </section>
+            <aside class="alado"></aside>
+        </main>
+
+        <footer id="pies"></footer>
+    </body>
+
+</html>

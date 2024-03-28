@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ejercicio Responsive</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-size: 16px;
+            }
+
+            #encabezado {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1.5rem;
+                margin-bottom: 4rem;
+                font-variant: small-caps;
+                text-transform: capitalize;
+            }
+
+            #principal {
+                display: grid;
+                row-gap: 3rem;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(4, 1fr);
+                width: 100vw;
+            }
+
+            .imagen {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .principal_imagen1 {
+                grid-area: uno;
+            }
+
+            .principal_imagen2 {
+                grid-area: dos;
+            }
+
+            .principal_imagen3 {
+                grid-area: tres;
+            }
+
+            .principal_imagen4 {
+                grid-area: cuatro;
+            }
+
+            @media (max-width: 480px) {
+                #principal {
+                    grid-template-areas:    "uno uno uno uno"
+                                            "tres tres tres tres"
+                                            "cuatro cuatro cuatro cuatro"
+                                            "dos dos dos dos";
+                }
+            }
+
+            @media (min-width: 480px) and (max-width: 1024px) {
+                #encabezado {
+                    font-size: 24px;
+                }
+
+                #principal {
+                    grid-template-areas:    "uno uno dos dos"
+                                            "uno uno dos dos"
+                                            "tres tres cuatro cuatro"
+                                            "tres tres cuatro cuatro";
+                }
+            }
+
+            @media (min-width: 1024px) {
+                #encabezado {
+                    font-size: 32px;
+                }
+
+                #principal {
+                    grid-template-areas:    "uno dos tres cuatro";
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header id="encabezado">
+            <h1 class="encabezado_titulo">¡Feliz Navidad!</h1>
+        </header>
+
+        <main id="principal">
+            <div class="imagen principal_imagen1">
+                <img src="./img/4193253.png" alt="image1" />
+            </div>
+
+            <div class="imagen principal_imagen2">
+                <img src="./img/4193299.png" alt="image2" />
+            </div>
+
+            <div class="imagen principal_imagen3">
+                <img src="./img/4193257.png" alt="image3" />
+            </div>
+
+            <div class="imagen principal_imagen4">
+                <img src="./img/4193265.png" alt="image4" />
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    line-height: 1.4em;
+}
+
+
+#encabezado, #principal {
+    margin: 1.2rem;
+}
+
+#encabezado {
+    height: 9vh;
+    padding: 10px;
+}
+
+.logotipo {
+    float: left;
+}
+
+.buscarGoogle {
+    float: right;
+    margin: 18px 0px;
+}
+
+#menu {
+    background-color: #264ab5;
+    border: 2px solid #081a83;
+    padding: 8px 4px;
+    margin-left: 18px;
+    margin-right: 1em;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+#menu ul li a {
+    color: #fff;
+    font-size: 1.3em;
+}
+
+.asideIzquierdo {
+    float: left;
+    width: 20%;
+}
+
+#lateral {
+    font-size: .9em;
+    background-color: #f7f7f7;
+    border: 1px solid #aeaeb6;
+    padding: 6px;
+}
+
+.noticias_titulo a {
+    color: #003366;
+}
+
+.noticias_fecha {
+    display: block;
+    color: #999;
+    margin-top: 10px;
+}
+
+.enlacesRelacionados {
+    margin-top: 12px;
+}
+
+#publicidad {
+    color: #555;
+    background-color: #fff7ce;
+    margin-top: 24px;
+    padding: 6px;
+    border: 2px dotted orange;
+}
+
+.publicidad_link {
+    color: #CC6600;
+}
+
+.seccionPrincipal {
+    display: inline-block;
+    padding: 0px 15px;
+    width: 60%;
+}
+
+.seccionPrincipal_imagen {
+    width: 25%;
+    margin-top: 15px;
+}
+
+.seccionPrincipal_texto {
+    float: right;
+    width: 73%;
+}
+
+.articulo {
+    margin-bottom: 6%;
+}
+
+.articulo h2 {
+    color: #CC6600;
+    font-size: 1.6em;
+    line-height: 1.2em;
+    margin-bottom: .3em;
+    overflow: hidden;
+    clear: both;
+}
+
+.articulo a {
+    color: #CC6600;
+}
+
+.articulo p {
+    margin: .3em 0;
+}
+
+#secundario {
+    border: 2px solid #b99674;
+    padding: 10px;
+    line-height: 1.8em;
+    width: 20%;
+    float: right;
+}
+
+.secundario_articulo-titulo {
+    background-color: #db9157;
+    padding: 8px;
+}
+
+#pieDePagina {
+    display: block;
+    clear: both;
+    padding: 15px;
+}
+
+.separador {
+    padding: 7px 5px;
+    border: 1px solid #7e8592;
+    background-color: #f7f7f7;
+}
+
+.separador a {
+    padding: 0 5px 0 2px;
+    border-right: 1px solid #7e8592;
+}
+
+.separador a:nth-child(6) {
+    border: none;
+}
+
+.copy_footer {
+    float: right;
+}

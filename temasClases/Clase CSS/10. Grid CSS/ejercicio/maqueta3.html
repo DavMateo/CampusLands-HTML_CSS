@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Grid | Maqueta n°2</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            .contenedorGrid {
+                display: grid;
+                background-color: #e3e4e3;
+                width: 100vw;
+                height: 70vh;
+                gap: 1.8vw;
+                padding: 1.8vw;
+                grid-template-areas:    "uno dos tres"
+                                        "uno cinco tres"
+                                        "cuatro cinco seis";
+            }
+
+            .item1, .item2 {
+                background-color: #ff6900;
+            }
+
+            .item3 {
+                background-color: #00696c;
+            }
+
+            .item4, .item5, .item6 {
+                background-color: #6a0934;
+            }
+
+            .item1 {
+                grid-area: uno;
+            }
+
+            .item2 {
+                grid-area: dos;
+            }
+
+            .item3 {
+                grid-area: tres;
+            }
+
+            .item4 {
+                grid-area: cuatro;
+            }
+
+            .item5 {
+                grid-area: cinco;
+            }
+
+            .item6 {
+                grid-area: seis;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="contenedorGrid">
+            <div class="item1"></div>
+            <div class="item2"></div>
+            <div class="item3"></div>
+            <div class="item4"></div>
+            <div class="item5"></div>
+            <div class="item6"></div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,28 @@
+#encabezado {
+    background-color: plum;
+    font-size: 110%;
+}
+
+.navegacion {
+    padding: 10px;
+}
+
+.listaNavegacion li {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.listaNavegacion li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.inicio {
+    background-color: blue;
+    border-radius: 7px;
+}
+
+.inicio a {
+    margin: auto 15px;
+}

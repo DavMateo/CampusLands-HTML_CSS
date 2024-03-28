@@ -1,0 +1,18 @@
+@import url("./style.css");
+@import url("./variables.css");
+@import url("./tipografias.css");
+
+body {
+    color: #5c5c5c;
+}
+
+#encabezado {
+    background-color: var(--colorFondoTareas);
+}
+
+#principal {
+    display: var(--flexbox);
+    flex-wrap: wrap;
+    margin-top: 4.375rem;
+    padding: .8rem;
+}

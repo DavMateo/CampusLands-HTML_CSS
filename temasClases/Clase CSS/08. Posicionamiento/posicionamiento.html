@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Posicionamiento</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 2rem;
+                font-size: 2rem;
+                font-family: sans-serif;
+                background-color: #000;
+                height: 2600px;
+            }
+
+            h1 {
+                color: #fff;
+                font-size: 3rem;
+                text-align: center;
+            }
+
+            div {
+                border-radius: 5px;
+                background-color: gray;
+            }
+
+            .static {
+                background-color: #ddd;
+            }
+
+            .relative {
+                background-color: #82c476;
+            }
+
+            .absolute {
+                background-color: #fc9191;
+            }
+
+            .fixed {
+                background-color: #a8d5e2;
+            }
+
+            .sticky {
+                background-color: #e1e1ac;
+            }
+
+
+            .static {
+                position: static;
+                z-index: -2;
+            }
+
+            .relative {
+                position: relative;
+                left: 50px;
+                top: 5px;
+                right: 20px;
+                z-index: 2;
+            }
+
+            .parent {
+                position: relative;
+            }
+
+            .absolute {
+                position: absolute;
+                top: 10px;
+                z-index: -1;
+            }
+
+            .fixed {
+                position: fixed;
+                top: 50%;
+                right: 20px;
+            }
+
+            .sticky {
+                position: sticky;
+                top: 0px;
+                z-index: 1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>CSS Position</h1>
+        <div class="parent">
+            <div class="static">Static</div>
+            <div class="relative">Relative</div>
+            <div class="absolute">Absolute</div>
+            <div class="fixed">Fixed</div>
+            <div class="sticky">Sticky</div>
+        </div>
+    </body>
+
+</html>
